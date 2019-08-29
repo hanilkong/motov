@@ -24,24 +24,25 @@
 				background-repeat: no-repeat
 				display: flex
 				flex-direction: column
+				align-items: center
 		@include xl
-				min-width: 120rem / $calc-xl
+				min-width: 80rem / $calc-xl
 				min-height: 67.5rem / $calc-xl
 		@include lg
 				min-width: 120rem / $calc-lg
 				min-height: 67.5rem / $calc-lg
 		@include mdl
 				min-width: 45rem / $calc-mdl
-				min-height: 80rem / $calc-mdl
+				min-height: 90rem / $calc-mdl
 		@include mdp
 				min-width: 45rem / $calc-mdp
-				min-height: 80rem / $calc-mdp
+				min-height: 90rem / $calc-mdp
 		@include sml
 				min-width: 45rem / $calc-sml
-				min-height: 80rem / $calc-mdp
+				min-height: 90rem / $calc-mdp
 		@include smp
 				min-width: 45rem / $calc-smp
-				min-height: 80rem / $calc-sml
+				min-height: 90rem / $calc-sml
 		#container-1-text-1
 				font-family: 'nanum-squareB'
 				text-align: center
@@ -57,8 +58,6 @@
 						margin-top: 21rem / $calc-lg
 						font-size: 2.625rem / $calc-lg
 						letter-spacing: 2.7rem / $calc-lg
-				@include isMobile
-						display: none
 		#container-1-text-2
 				font-family: 'nanum-squareR'
 				color: #ffffff
@@ -71,5 +70,44 @@
 				@include lg
 						margin-top: 4.625rem / $calc-lg
 						font-size: 1.75rem / $calc-lg
-				@include isMobile
-						display: none
+		#container-1-text-body
+				font-family: 'nanum-squareB'
+				color: #ffffff
+				width: 23.75rem
+				height: 19.375rem
+				margin-top: 16rem
+				@include isPhone
+						margin-top: 16rem / $calc-sml
+				
+				div:nth-child(1)
+						white-space: nowrap
+						width: 23.75rem
+						font-size: 4.125rem
+						letter-spacing: 6.3rem
+				div:nth-child(6)
+						white-space: nowrap
+						width: 23.75rem
+						font-size: 4.125rem
+						letter-spacing: 2.9rem
+				div:nth-child(11)
+						white-space: nowrap
+						width: 23.75rem
+						font-size: 4.125rem
+						letter-spacing: 0.8rem
+		#container-1-text-bottom
+				position: absolute
+				font-family: 'nanum-squareR'
+				color: #ffffff
+				font-size: 1.875rem
+				bottom: 5.9375rem
+				// @include mdl
+				// 		font-size: 1.875rem / $calc-mdl
+				// @include mdp
+				// 		font-size: 1.875rem / $calc-mdp
+				// @include sml
+				// 		font-size: 1.875rem / $calc-sml
+				// @include smp
+				// 		font-size: 1.875rem / $calc-sml
+				
+					
+					

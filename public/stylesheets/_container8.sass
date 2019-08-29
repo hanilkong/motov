@@ -7,6 +7,7 @@
 		display: flex
 		flex-direction: row
 		justify-content: center
+		align-items: center
 		border-top: 1px solid #767676
 		width: 100%
 		height: 11.25rem
@@ -22,55 +23,43 @@
 		@include mdp
 				height: 40.6875rem / $calc-mdp
 		@include sml
-				height: 40.6875rem / $calc-mdp
-		@include smp
 				height: 40.6875rem / $calc-sml
+		@include smp
+				height: 40.6875rem / $calc-smp
 		#motov-icon
 				content: url('/images/desktop/motov.jpg')
 				width: 15.4375rem
 				height: 4.375rem
-				margin-top: 3.125rem
-				// margin-left: 20%
 				@include isMobile
 						content: url('/images/mobile/small-icon.jpg')
 				@include xl
 						width: 15.4375rem / $calc-xl
 						height: 4.375rem / $calc-xl
-						margin-top: 3.125rem / $calc-xl
 				@include lg
 						width: 15.4375rem / $calc-xl
 						height: 4.375rem / $calc-xl
-						margin-top: 3.125rem / $calc-xl
 				@include mdl
 						width: 28.68625rem / $calc-mdl
 						height: 8.14875rem / $calc-mdl
-						margin-top: 5.76375rem / $calc-mdl
-						margin-left: 0
 				@include mdp
 						width: 28.68625rem / $calc-mdp
 						height: 8.14875rem / $calc-mdp
 						margin-top: 5.76375rem / $calc-mdp
-						margin-left: 0
 				@include sml
 						width: 28.68625rem / $calc-sml
 						height: 8.14875rem / $calc-sml
 						margin-top: 5.76375rem / $calc-sml
-						margin-left: 0
 				@include smp
 						width: 28.68625rem  / $calc-smp
 						height: 8.14875rem / $calc-smp
 						margin-top: 5.76375rem / $calc-smp
-						margin-left: 0
 		#hi-seoul 
 				display: flex
 				flex-direction: row
-				margin-top: 2.8125rem
 				margin-left: 8%
 				@include xl
-						margin-top: 2.8125rem / $calc-xl
 						margin-left: 8% / $calc-xl
 				@include lg
-						margin-top: 2.8125rem / $calc-lg
 						margin-left: 8% / $calc-xl
 				@include mdl
 						margin-top: 5.3rem / $calc-mdl
@@ -112,11 +101,12 @@
 						white-space: nowrap
 						display: flex
 						flex-direction: column
-						margin: 1.5625rem 0 0 1.5625rem
+						justify-content: center
+						margin-left: 1.5625rem
 						@include xl
-								margin: 1.5625rem / $calc-xl 0 0 1.5625rem / $calc-xl
+								margin-left: 1.5625rem / $calc-xl
 						@include lg
-								margin: 1.5625rem / $calc-lg 0 0 1.5625rem / $calc-lg
+								margin-left: 1.5625rem / $calc-lg
 						.seoul-icon-first 
 								font-family: 'noto-sansB'
 								font-size: 1rem
@@ -136,15 +126,12 @@
 		#copyright 
 				font-family: 'noto-sansL'
 				font-size: 1rem
-				margin-top: 5.125rem
 				margin-left: 4%
 				@include xl
 						font-size: 1rem / $calc-xl
-						margin-top: 5.125rem / $calc-xl
 						margin-left: 4% / $calc-xl
 				@include lg
 						font-size: 1rem / $calc-xl
-						margin-top: 5.125rem / $calc-lg
 						margin-left: 4% / $calc-lg
 				@include mdl
 						font-size: 1.375rem / $calc-mdl

@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta content="yes" name="apple-mobile-web-app-capable" />
     <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
-    <link rel="icon" href="favicon.ico?v=1.1">
     <meta name="theme-color" content="#000000" />
     <!-- js lib -->
     <script src="javascripts/lib/jquery.min.js"></script>
@@ -60,13 +59,12 @@
         </div>
         <div class="popup-button-container">
             <div id="mount-popup-close" class="popup-close" onclick="mountPopUpClose()">취 소</div>
-            <div id="mount-popup-send" class="popup-send" onclick="mountPopUpSend()"">보내기</div>
+            <div id="mount-popup-send" class="popup-send" onclick="mountPopUpSend()">보내기</div>
         </div>
     </div>
     <div id="navi-1" class="navi"></div>
     <div id="scroll-menu-container">
-        <div id="scroll-menu">
-        </div>
+        <div id="scroll-menu"></div>
         <div id="hamburger-menu" class="mobile">
             <ul id="hamburger-navi">
                 <li>
@@ -89,7 +87,9 @@
     </div>
 
     <div id="top-menu">
-        <a href="#navi-1" id="logo-container"><div id="logo"></div></a>
+        <a href="#navi-1" id="logo-container">
+            <div id="logo"></div>
+        </a>
         <ul id="navi" class="desktop">
             <li>
                 <a class="navi1" href="#container-2">About</a>
@@ -113,11 +113,17 @@
     </div>
     <div id="navi-trigger" />
     <div id="container-1" class="panel">
-        <div id="container-1-text-1">당신의 메시지를 태워 보세요</div>
-        <div id="container-1-text-2">국내 최초 모바일 미디어 플랫폼, 모토브</div>
+        <div id="container-1-text-1" class="desktop">당신의 메시지를 태워 보세요</div>
+        <div id="container-1-text-2" class="desktop">국내 최초 모바일 미디어 플랫폼, 모토브</div>
+        <div id="container-1-text-body" class="mobile">
+            <div>당신의</div><br/><br/><br/><br/>
+            <div>메시지를</div><br/><br/><br/><br/>
+            <div>태워 보세요</div>
+        </div>
+        <div id="container-1-text-bottom" class="mobile">국내 최초 모바일 미디어 플랫폼, 모토브</div>
         <div id="navi-2" class="navi"></div>
     </div>
-    <div id="container-2">
+    <div id="container-2" class="container">
         <div id="player-container">
             <video id='player' class='video-js vjs-default-skin vjs-big-play-centered' controls preload='auto'
                 data-setup='{}'>
@@ -128,14 +134,14 @@
         <div id="container-2-text-container">
             <div class="container-navi-title black-motov">
                 About
-                <div class="container-navi-title-underbar" ></div>
+                <div class="container-navi-title-underbar"></div>
             </div>
             <div class="container-title black-motov">모빌리티 미디어 플랫폼, 모토브</div>
             <div class="container-text-body gray-motov">
-                국내 최초 디지털 택시탑 미디어 플랫폼으로서, 실시간<br />
-                위치기반의 택시탑 시스템 입니다. MOTOV는 광고뿐만 아니라<br />
-                다양한 정보를 알려주는 미디어 플랫폼 입니다. 합리적인 가격과<br />
-                높은 효과를 제공할 수 있는 새로운 옥외/교통/디지털<br />
+                국내 최초 디지털 택시탑 미디어 플랫폼으로서, 실시간<br/>
+                위치기반의 택시탑 시스템 입니다. MOTOV는 광고뿐만 아니라<br/>
+                다양한 정보를 알려주는 미디어 플랫폼 입니다. 합리적인 가격과<br/>
+                높은 효과를 제공할 수 있는 새로운 옥외/교통/디지털<br/>
                 매체입니다.
             </div>
         </div>
@@ -208,7 +214,7 @@
         <div id="navi-3" class="navi"></div>
         <div id="ad-info" class="container-navi-title black-motov">
             Advertisers
-            <div class="container-navi-title-underbar" ></div>
+            <div class="container-navi-title-underbar"></div>
             <div class="container-title black-motov">가장 진보된 옥외 광고 플랫폼</div>
             <div class="container-text-body gray-motov">
                 모토브 광고의 상품은 노출 보장, 지역 타겟, 타임 스팟<br />
@@ -320,4 +326,5 @@
     </div>
 </body>
 <script src=" javascripts/index.js"> </script>
+
 </html>

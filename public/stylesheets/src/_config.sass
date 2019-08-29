@@ -1,7 +1,7 @@
 @import ./_profile
 
-$calc-xl: 1.5
-$calc-lg: 2
+$calc-xl: 1
+$calc-lg: 1.5
 $calc-mdl: 1
 $calc-mdp: 1.2
 $calc-sml: 2.1
@@ -10,27 +10,27 @@ $calc-dtm: 1.875
 
 @font-face 
 		font-family: 'noto-sansL'
-		src: url('/stylesheets/fonts/NotoSansKR-Light.woff2')
+		src: url('fonts/NotoSansKR-Light.woff2')
 
 @font-face 
 		font-family: 'noto-sansM'
-		src: url('/stylesheets/fonts/NotoSansKR-Medium.woff2')
+		src: url('fonts/NotoSansKR-Medium.woff2')
 
 @font-face 
 		font-family: 'noto-sansB'
-		src: url('/stylesheets/fonts/NotoSansKR-Bold.woff2')
+		src: url('fonts/NotoSansKR-Bold.woff2')
 
 @font-face 
 		font-family: 'noto-sansR'
-		src: url('/stylesheets/fonts/NotoSansKR-Regular.woff2')
+		src: url('fonts/NotoSansKR-Regular.woff2')
 
 @font-face 
 		font-family: 'nanum-squareB'
-		src: url('/stylesheets/fonts/NanumSquareB.woff2')
+		src: url('fonts/NanumSquareB.woff2')
 
 @font-face 
 		font-family: 'nanum-squareR'
-		src: url('/stylesheets/fonts/NanumSquareR.woff2')
+		src: url('fonts/NanumSquareR.woff2')
 
 html 
     overflow-x: hidden
@@ -59,7 +59,7 @@ body
 				-o-transition: all 0.6s ease-out
 				transition: all 0.6s ease-out
 				width: 100%
-				height: 10rem
+				height: 7.5rem
 				@include isMobile
 						-webkit-transform: none
 						-moz-transform: none
@@ -77,26 +77,33 @@ body
 						-o-transform: none
 						transform: none
 				
-
 #top-menu 
 		position: fixed
 		display: flex
 		flex-direction: row
+		align-items: center
 		justify-content: space-between
 		z-index: 3
 		width: 100%
+		height: 7.5rem
+		@include isMobile
+				height: 5rem
 		#logo-container
-				margin-top: 2.5rem
 				margin-left: 20%
-				@include isMobile
-						margin-top: .6875rem
-						margin-left: 2.5rem
+				@include xl
+						margin-left: 20%
+				@include lg
+						margin-left: 20% / $calc-lg
+				@include mdl
+						margin-left: 20% / $calc-mdl
+				@include mdp
+						margin-left: 20% / $calc-mdp
 				@include sml
 						margin-top: .6875rem / $calc-sml
-						margin-left: 2.5rem / $calc-sml
+						margin-left: 20% / $calc-sml
 				@include smp
 						margin-top: .6875rem / $calc-smp
-						margin-left: 2.5rem / $calc-smp
+						margin-left: 20% / $calc-smp
 				#logo
 						content: url('/images/desktop/logo.png')
 						width: 14.0625rem
@@ -121,7 +128,7 @@ body
 				float: right
 				width: 100%
 				font-size: 1.25rem
-				margin-top: 3.53375rem
+				// margin-top: 3.53375rem
 				margin-right: 10%
 				@include xl
 						margin-right: 10% / $calc-xl
@@ -164,22 +171,22 @@ body
 		flex-direction: column
 		font-size: 1.5rem
 		@include xl
-				font-size: 1.5rem / $calc-xl
+				font-size: 1.5rem
 		@include lg
 				font-size: 1.5rem / $calc-xl
 		@include isMobile
 				font-size: 2rem
 
 .container-navi-title-underbar 
-		margin-top: 1.25rem
+		margin-top: 0.5rem
 		width: 2rem
 		height: 2px
 		background-color: #000000
 		@include xl
-				margin-top: 1.25rem / $calc-xl
+				margin-top: 0.5rem
 				width: 2rem / $calc-xl
 		@include lg
-				margin-top: 1.25rem / $calc-lg
+				margin-top: 0.5rem / $calc-lg
 				width: 2rem / $calc-xl
 		@include isMobile
 				margin-top: 1.6875rem
@@ -190,7 +197,7 @@ body
 		font-size: 2.25rem
 		margin: 2.875rem 0 1.25rem 0
 		@include xl
-				font-size: 2.25rem / $calc-xl
+				font-size: 2.25rem
 				margin: 2.875rem / $calc-xl 0 1.25rem / $calc-xl 0
 		@include lg
 				font-size: 2.25rem / $calc-lg
@@ -206,11 +213,11 @@ body
 				margin: 1.6875rem  / $calc-sml 0 1.9375rem  / $calc-sml 0
 		
 
-.container-text-body 
+.container-text-body
 		font-family: 'noto-sansL'
 		font-size: 1.375rem
 		@include xl
-				font-size: 1.375rem / $calc-xl
+				font-size: 1.375rem
 		@include lg
 				font-size: 1.375rem / $calc-xl
 		@include isMobile
@@ -330,7 +337,7 @@ body
 		color: #fe9b00
 		font-size: 1.25rem
 		@include xl
-		  	font-size: 1.25rem / $calc-xl
+		  	font-size: 1.25rem
 		@include lg
 				font-size: 1.25rem / $calc-xl
 		@include isMobile
@@ -347,6 +354,20 @@ body
 		display: none
 		@include isMobile
 				display: inline
+
+.container
+		@include xl
+				padding-left: 20%
+		@include lg
+				padding-left: 20% / $calc-lg
+		@include mdl
+				padding-left: 20% / $calc-mdl
+		@include mdp
+				padding-left: 20% / $calc-mdp
+		@include sml
+				padding-left: 20% / $calc-sml
+		@include smp
+				padding-left: 20% / $calc-smp
 
 .reveal-anim 
 		opacity: 0
@@ -393,7 +414,7 @@ body
 		font-family: 'noto-sansL'
 		font-size: 1.25rem
 		@include xl
-				font-size: 1.25rem / $calc-xl
+				font-size: 1.25rem
 		@include lg
 				font-size: 1.25rem / $calc-xl
 		@include mdl
