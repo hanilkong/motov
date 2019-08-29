@@ -1,0 +1,66 @@
+// Device = Most of the Smartphones Mobiles (Portrait)
+// Screen = B/w 320px to 479px height 480
+@mixin smp
+    @media screen and (min-width: 320px) and (max-width: 480px)
+        @content
+    
+    
+// Device = Low Resolution Tablets, Mobiles (Landscape)
+// Screen = B/w 481px to 767px height 850
+@mixin sml
+    @media screen and (min-width: 481px) and (max-width: 767px)
+        @content
+
+
+// Device  = Tablets, Ipads (portrait)
+// Screen  = B/w 768px to 1024px
+@mixin mdp
+    @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait)
+        @content
+
+// Device = Tablets, Ipads (landscape)
+// Screen = B/w 768px to 1024px  1.422222222   
+@mixin mdl
+    @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
+        @content
+
+// Device = Laptops, Desktops
+// Screen = B/w 1025px to 1280px
+@mixin lg
+    @media screen and (min-width: 1025px) and (max-width: 1280px)
+        @content
+
+// Device = Desktops
+// Screen = B/w 1281px to 1919px
+@mixin xl
+    @media screen and (min-width: 1281px) and (max-width: 1920px)
+        @content
+
+// Device = Desktops
+// Screen = 1920px to higher resolution desktops
+@mixin fxl
+    @media screen and (min-width: 1921px)
+        @content
+
+// Device = Costom
+@mixin rwd($min-screen, $max-screen)
+    @media screen and (min-width: $min-screen) and (max-width: $max-screen)
+        @content
+
+// is Mobile and tablet 
+@mixin isMobile
+    @media screen and (max-width: 1024px)
+        @content
+
+// is only smart phone
+@mixin isPhone
+    @media screen and (max-width: 767px)
+        @content
+    
+
+@include xl
+@include lg
+@include mdl
+@include mdp
+@include sml
+@include smp

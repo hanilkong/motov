@@ -1,0 +1,162 @@
+@import src/_config
+@import src/_profile
+
+#container-7 
+		position: relative
+		background: #f2f2f2
+		white-space: nowrap
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 100%
+		height: 45.375rem
+		@include xl
+				height: 45.375rem / $calc-xl
+		@include lg
+				height: 45.375rem / $calc-lg
+		@include mdl
+				height: 70.875rem / $calc-mdl
+		@include mdp
+				height: 70.875rem / $calc-mdp
+		@include sml
+				height: 70.875rem / $calc-mdp
+		@include smp
+				height: 70.875rem / $calc-sml
+		.container-7-title 
+				font-family: 'noto-sansB'
+				color: #008d9b
+				font-size: 3.125rem
+				margin-top: 8.75rem
+				@include xl
+						font-size: 3.125rem / $calc-xl
+						margin-top: 8.75rem / $calc-xl
+				@include lg
+						font-size: 3.125rem / $calc-lg
+						margin-top: 8.75rem / $calc-lg
+				@include mdl
+						font-size: 3rem / $calc-mdl
+						margin-top: 6.16125rem / $calc-mdl
+				@include mdp
+						font-size: 3rem / $calc-mdp
+						margin-top: 6.16125rem / $calc-mdp
+				@include sml
+						font-size: 3rem / $calc-sml
+						margin-top: 6.16125rem / $calc-sml
+				@include smp
+						font-size: 3rem / $calc-smp
+						margin-top: 6.16125rem / $calc-smp
+		.container-7-underbar 
+				margin: 2.5rem 0 2.5rem 0
+				width: 2.9375rem
+				height: 2px
+				background-color: #101010
+				@include isMobile
+						height: 1px
+				@include xl
+						margin: 2.5rem / $calc-xl 0 2.5rem / $calc-xl 0
+						width: 2.9375rem / $calc-xl
+				@include lg
+						margin: 2.5rem / $calc-lg 0 2.5rem / $calc-lg 0
+						width: 2.9375rem / $calc-lg
+				@include mdl
+						margin: 1.92125rem / $calc-mdl 0 5.3rem / $calc-mdl 0
+						width: 2.9375rem / $calc-mdl
+				@include mdp
+						margin: 1.92125rem / $calc-mdp 0 5.3rem / $calc-mdp 0
+						width: 2.9375rem / $calc-mdp
+				@include sml
+						margin: 1.92125rem / $calc-sml 0 5.3rem / $calc-sml 0
+						width: 2.9375rem / $calc-sml
+				@include smp
+						margin: 1.92125rem / $calc-smp 0 5.3rem / $calc-smp 0
+						width: 2.9375rem / $calc-smp
+		.container-7-location 
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				margin-top: 6.25rem
+				@include isMobile
+					flex-direction: column
+				@include xl
+						margin-top: 6.25rem / $calc-xl
+				@include lg
+						margin-top: 6.25rem / $calc-lg
+				@include mdl
+						margin-top: 4.43875rem / $calc-mdl
+				@include mdp
+						margin-top: 4.43875rem / $calc-mdp
+				@include sml
+						margin-top: 4.43875rem / $calc-sml
+				@include smp
+						margin-top: 4.43875rem / $calc-smp
+		.container-7-location-item
+				@for $i from 2 through 3
+						&:nth-child(#{$i})
+								margin-left: 3.125rem
+								@include xl
+										margin-left: 3.125rem / $calc-xl
+								@include lg
+										margin-left: 3.125rem / $calc-lg
+								@include isMobile
+										margin-left: 0
+				.container-7-item-underbar
+						background-color: #101010
+						width: 23.5rem
+						height: 1px
+						@include isMobile
+								background-color: #eeeeee
+						@include xl
+								width: 23.5rem / $calc-xl
+						@include lg
+								width: 23.5rem / $calc-xl
+						@include mdl
+								width: 40.25rem / $calc-mdl
+						@include mdp
+								width: 40.25rem / $calc-mdp
+						@include sml
+								width: 40.25rem / $calc-sml
+						@include smp
+								width: 40.25rem / $calc-smp
+				.container-7-location-item-name 
+						font-family: 'noto-sansB'
+						font-size: 1.5rem
+						margin-top: 1.5rem
+						@include xl
+								font-size: 1.5rem / $calc-xl
+								margin-top: 1.5rem / $calc-xl
+						@include lg
+								font-size: 1.5rem / $calc-xl
+								margin-top: 1.5rem / $calc-xl
+						@include mdl
+								font-size: 1.5rem / $calc-mdl
+								margin-top: 2.0625rem / $calc-mdl
+						@include mdp
+								font-size: 1.5rem / $calc-mdp
+								margin-top: 2.0625rem / $calc-mdp
+						@include sml
+								font-size: 1.5rem / $calc-sml
+								margin-top: 2.0625rem / $calc-sml
+						@include smp
+								font-size: 1.5rem / $calc-sml
+								margin-top: 2.0625rem / $calc-smp
+						@include isMobile
+								text-align: center
+				.container-text-body
+						font-family: 'noto-sansM'
+						@include mdl
+								font-size: 1.5rem / $calc-mdl
+								text-align: center
+								margin-bottom: 4rem / $calc-mdl
+						@include mdp
+								font-size: 1.5rem / $calc-mdp
+								text-align: center
+								margin-bottom: 4rem / $calc-mdp
+						@include sml
+								font-size: 1.5rem / $calc-sml
+								text-align: center
+								margin-bottom: 4rem / $calc-sml
+						@include smp
+								font-size: 1.5rem / $calc-sml
+								text-align: center
+								margin-bottom: 4rem / $calc-smp
+		

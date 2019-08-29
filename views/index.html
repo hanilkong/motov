@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+    <link rel="icon" href="favicon.ico?v=1.1">
+    <meta name="theme-color" content="#000000" />
+    <!-- js lib -->
+    <script src="javascripts/lib/jquery.min.js"></script>
+    <script src="javascripts/lib/tweenmax.min.js"></script>
+    <script src="javascripts/lib/scrollmagic.min.js"></script>
+    <script src="javascripts/lib/addindicators.min.js"></script>
+    <script src="javascripts/lib/animationgsap.js"></script>
+    <script src="javascripts/lib/spnav.min.js"></script>
+    <script src="javascripts/lib/videojs_1.1.2.min.js"></script>
+    <script src="javascripts/lib/videojs.min.js"></script>
+    <script src="javascripts/lib/bpopup.min.js"></script>
+    <script src="javascripts/lib/async.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="stylesheets/index.css" />
+    <link rel="stylesheet" href="stylesheets/videojs_7.6.0.css" />
+    <link rel="stylesheet" href="stylesheets/normalize_8.0.1.css" />
+    <title>motov</title>
+</head>
+
+<body style="margin: 0 0 0 0 !important; overflow-x:hidden;">
+    <!-- 팝업 -->
+    <!-- 광고팝업 -->
+    <div id="ad-on-popup-contents" class="popup_contents">
+        <div class="popup-text-container">
+            <div class="popup-title">광고 문의</div>
+            <div class="popup-info">최대한 빠른 시간 내에 담당자로 부터 연락을 드립니다.</div>
+        </div>
+        <div class="popup-input-container">
+            <input class="popup-input" type="text" name="company" placeholder=" 업체명" />
+            <input class="popup-input" type="text" name="name" placeholder=" 이름" />
+            <input class="popup-input" type="text" name="contact" placeholder=" 연락처" />
+            <input class="popup-input" id="referral-code" type="text" name="code" placeholder=" 추천코드" />
+        </div>
+        <div class="code-info">* 추천 코드는 택시 차량 번호입니다.</div>
+        <div class="popup-button-container">
+            <div id="ad-on-popup-close" class="popup-close" onclick="adPopUpClose()">취 소</div>
+            <div id="ad-on-popup-send" class="popup-send" onclick="adPopUpSend()">보내기</div>
+        </div>
+    </div>
+
+    <!-- 설치팝업 -->
+    <div id="mount-popup-contents" class="popup_contents">
+        <div class="popup-text-container">
+            <div class="popup-title">택시탑 설치 문의</div>
+            <div class="popup-info">최대한 빠른 시간 내에 담당자로 부터 연락을 드립니다.</div>
+        </div>
+        <div class="popup-input-container">
+            <input class="popup-input" type="text" name="text" placeholder=" 이름 (개인 혹은 법인명)" />
+            <input class="popup-input" type="text" name="name" placeholder=" 차량번호" />
+            <input class="popup-input" type="text" name="contact" placeholder=" 연락처 (전화번호)" />
+        </div>
+        <div class="popup-button-container">
+            <div id="mount-popup-close" class="popup-close" onclick="mountPopUpClose()">취 소</div>
+            <div id="mount-popup-send" class="popup-send" onclick="mountPopUpSend()"">보내기</div>
+        </div>
+    </div>
+    <div id="navi-1" class="navi"></div>
+    <div id="scroll-menu-container">
+        <div id="scroll-menu">
+        </div>
+        <div id="hamburger-menu" class="mobile">
+            <ul id="hamburger-navi">
+                <li>
+                    <a class="home" href="#navi-2">Home</a>
+                </li>
+                <li>
+                    <a class="navi1" href="#container-2">About</a>
+                </li>
+                <li>
+                    <a class="navi2" href="#container-5">Advertisers</a>
+                </li>
+                <li>
+                    <a class="navi3" href="#container-6">Drivers</a>
+                </li>
+                <li>
+                    <a class="navi4" href="#container-7">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="top-menu">
+        <a href="#navi-1" id="logo-container"><div id="logo"></div></a>
+        <ul id="navi" class="desktop">
+            <li>
+                <a class="navi1" href="#container-2">About</a>
+            </li>
+            <li>
+                <a class="navi2" href="#container-5">Advertisers</a>
+            </li>
+            <li>
+                <a class="navi3" href="#container-6">Drivers</a>
+            </li>
+            <li>
+                <a class="navi4" href="#container-7">Contact</a>
+            </li>
+        </ul>
+        <div class="hamburger mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div id="navi-trigger" />
+    <div id="container-1" class="panel">
+        <div id="container-1-text-1">당신의 메시지를 태워 보세요</div>
+        <div id="container-1-text-2">국내 최초 모바일 미디어 플랫폼, 모토브</div>
+        <div id="navi-2" class="navi"></div>
+    </div>
+    <div id="container-2">
+        <div id="player-container">
+            <video id='player' class='video-js vjs-default-skin vjs-big-play-centered' controls preload='auto'
+                data-setup='{}'>
+                <source src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/485050/movie.mp4' type='video/mp4'>
+            </video>
+            <div id="player-info">MOTOV Promotion movie by Themimvideo</div>
+        </div>
+        <div id="container-2-text-container">
+            <div class="container-navi-title black-motov">
+                About
+                <div class="container-navi-title-underbar" ></div>
+            </div>
+            <div class="container-title black-motov">모빌리티 미디어 플랫폼, 모토브</div>
+            <div class="container-text-body gray-motov">
+                국내 최초 디지털 택시탑 미디어 플랫폼으로서, 실시간<br />
+                위치기반의 택시탑 시스템 입니다. MOTOV는 광고뿐만 아니라<br />
+                다양한 정보를 알려주는 미디어 플랫폼 입니다. 합리적인 가격과<br />
+                높은 효과를 제공할 수 있는 새로운 옥외/교통/디지털<br />
+                매체입니다.
+            </div>
+        </div>
+
+    </div>
+    <div id="container-3">
+        <div id="trigger"></div>
+        <div class="image-container" id="imagesequence">
+            <img id="afternoon" />
+            <img id="evening" />
+        </div>
+        <div id="car"></div>
+        <div id="container-3-text-container">
+            <div class="container-title white-motov">어디서든, 낮에도 밤에도!</div>
+            <div class="container-text-body white-motov">
+                사람들이 많은 곳으로 찾아 다니는 택시 특성상 도심 어디서든<br />
+                이동하여 눈에 띄는 곳에서 언제 어디서든 사람들과 가장<br />
+                가까이, 그리고 눈높이에서 보여집니다.
+            </div>
+        </div>
+    </div>
+    <div id="container-4">
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div id="reveal-elements">
+            <div class="box reveal-anim">
+                <img id="first-mover-ads-icon" />
+                <div class="box-title1 black-motov">First-Mover Adv.</div>
+                <div class="box-body-container1">
+                    <div class="box-body-text gray-motov text-center ">
+                        해외에서는 점차 확산되고 빠르게 발전하고<br />
+                        있지만, 국내에선 모토브가 유일하게 서비스를<br />
+                        실시하고 있습니다. HW/SW 개발 부터 특허 및<br />
+                        인허가 문제까지 진입장벽이 높은 사업분야<br />
+                        로서, 빠른 시장 선점 및 경쟁우위에 있습니다.
+                    </div>
+                </div>
+            </div>
+            <div class="box reveal-anim">
+                <img id="geo-targeting-ads-icon" />
+                <div class="box-title2 black-motov">Geo-targeting Ads</div>
+                <div class="box-body-container2">
+                    <div class="box-body-text gray-motov text-center ">
+                        매스 타겟팅 기능의 옥외 광고가 원하는 장소와<br />
+                        시간에 맞춰 최적의 광고 송출합니다.<br />
+                        서비스를 통하여 온라인광고의 장점인 타겟팅<br />
+                        설정을 옥외광고에서도 설정 가능합니다.
+                    </div>
+                </div>
+            </div>
+            <div class="box reveal-anim">
+                <img id="intelligent-ap-icon" />
+                <div class="box-title3 black-motov">Intelligent Ap</div>
+                <div class="box-body-container3">
+                    <div class="box-body-text gray-motov text-center ">
+                        기존의 광고노출 레포트형식에서 발전된<br />
+                        형태로 광고노출 당시의 데이터를<br />
+                        광고주들에게 실시간으로 제공됩니다. 누적된<br />
+                        데이터를 바탕으로 유동인구 기반의 정밀한<br />
+                        타겟 광고가 가능해집니다.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container-5">
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div id="navi-3" class="navi"></div>
+        <div id="ad-info" class="container-navi-title black-motov">
+            Advertisers
+            <div class="container-navi-title-underbar" ></div>
+            <div class="container-title black-motov">가장 진보된 옥외 광고 플랫폼</div>
+            <div class="container-text-body gray-motov">
+                모토브 광고의 상품은 노출 보장, 지역 타겟, 타임 스팟<br />
+                총 3가지로 구성되어 있습니다. 원하시는 시간 및<br />
+                지역의 다양한 옵션을 선택 할 수 있습니다.<br /><br />
+                광고주센터를 통해 택시에서 노출되고 있는 광고들의<br />
+                노출 정보를 실시간으로 제공하며, AP 데이터를<br />
+                활용화여 해당 광고 노출 당시의 주변 유동인구 및 나이,<br />
+                성별 등의 세부사항을 제공해 드립니다.<br />
+            </div>
+        </div>
+        <button id="ad-button">광 고 문 의</button>
+        <div id="device-container">
+            <img id="big-device" class="device reveal-anim" />
+            <img id="small-device" class="device reveal-anim" />
+        </div>
+    </div>
+    <div id="container-6" class="panel">
+        <div id="navi-4" class="navi"></div>
+        <div class="position-container">
+            <div class="container-navi-title white-motov">
+                Drivers
+            </div>
+            <div class="container-navi-title-underbar back-white"></div>
+            <div class="container-title white-motov">
+                택시운전 중 최적의 추가 수익 창출
+            </div>
+            <div class="container-text-body opacity-motov container-6-mobile-text">
+                모토브 택시탑 플랫폼을 장착하시고 평소대로 택시 운행<br />
+                하시고 매달 추가 수익을 가져가실 수 있습니다. 드라이버 전용<br />
+                앱을 통해 주행 기록과 광고 노출 시간을 실시간으로 확인하실<br />
+                수 있습니다.<br /><br />
+            </div>
+            <div class="point-motov">
+                * 현재 대전 및 인천 개인택시에 한하여 신청하실 수 있습니다.
+            </div>
+            <button id="mount-button">설 치 문 의</button>
+        </div>
+    </div>
+    <div id="container-7">
+        <div id="navi-5" class="navi"></div>
+        <div class="container-7-title">Smile Together!</div>
+        <div class="container-7-underbar"></div>
+        <div class="container-text-body text-center gray-motov desktop">
+            모토브(MOTOV)는 택시업계 종사자, 플랫폼 운영자, 광고주, 소상공인, 정부, 시민들이<br />
+            모두 혜택을 누리는 선순환 구조의 상생모델을 지향하고 있습니다. 또한 4차 산업혁명<br />
+            시대에 맞춰 옥외광고 산업을 육성하고, 사회적 가치를 창출함으로써 대한민국 국민 모두와<br />
+            함께 행복하고 안전한 미래를 선도하고자 합니다.
+        </div>
+        <div class="container-text-body text-center gray-motov mobile">
+            모토브(MOTOV)는 택시업계 종사자, 플랫폼 운영자, 광고주,<br />
+            소상공인, 정부, 시민들이 모두 혜택을 누리는 선순환 구조의<br />
+            상생모델을 지향하고 있습니다. 또한 4차 산업혁명시대에<br />
+            맞춰 옥외광고 산업을 육성하고, 사회적 가치를 창출함<br />
+            으로써 대한민국 국민 모두와 함께 행복하고 안전한 미래를<br />
+            선도하고자 합니다.
+        </div>
+        <div class="container-7-location">
+            <div class="container-7-location-item">
+                <div class="container-7-item-underbar" class="desktop"></div>
+                <div class="container-7-item-underbar" class="mobile"></div>
+                <div class="container-7-location-item-name black-motov">
+                    본사 (대전)
+                </div>
+                <div class="container-text-body gray-motov">
+                    <br />
+                    대전광역시 유성구 문지로 193,(진리관)<br />
+                    T115호(문지동, KAIST 문지캠퍼스)
+                </div>
+            </div>
+            <div class="container-7-location-item">
+                <div class="container-7-item-underbar" class="desktop"></div>
+                <div class="container-7-item-underbar" class="mobile"></div>
+                <div class="container-7-location-item-name black-motov">
+                    R&D 오피스 (서울, 보라매)
+                </div>
+                <div class="container-text-body gray-motov">
+                    <br />
+                    서울시 관악구 보라매로 51<br />
+                    동양빌딩 3층
+                </div>
+            </div>
+            <div class="container-7-location-item">
+                <div class="container-7-item-underbar" class="desktop"></div>
+                <div class="container-7-item-underbar" class="mobile"></div>
+                <div class="container-7-location-item-name black-motov">
+                    비지니스 오피스 (서울, 선릉)
+                </div>
+                <div class="container-text-body gray-motov">
+                    <br />
+                    서울특별시 강남구 선릉로87길 8<br />
+                    페넌트타워12층
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container-8">
+        <img id="motov-icon" />
+        <div id="hi-seoul">
+            <img id="seoul-icon" />
+            <div class="hi-seoul-info">
+                <div class="seoul-icon-first gray-motov desktop">서울시 우수기업 브랜드</div>
+                <div class="seoul-icon-second gray-motov desktop">The Excellent Conpany Brand of Seoul</div>
+            </div>
+        </div>
+        <div id="copyright" class="gray-motov">
+            Copyright © 2018 더큰나눔MTN. All rights reserved
+        </div>
+    </div>
+</body>
+<script src=" javascripts/index.js"> </script>
+</html>

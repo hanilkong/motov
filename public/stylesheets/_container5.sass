@@ -1,0 +1,177 @@
+@import src/_config
+@import src/_profile
+
+#container-5 
+		background: #ffffff
+		position: relative
+		width: 100%
+		height: 53.75rem
+		@include isMobile
+				display: flex
+				flex-direction: column
+				align-items: center
+				justify-content: space-between
+				width: auto
+		@include xl
+				height: 53.75rem / $calc-xl
+		@include lg
+				height: 53.75rem / $calc-lg
+		@include mdl
+				height: 80rem / $calc-mdl
+		@include mdp
+				height: 80rem / $calc-mdp
+		@include sml
+				height: 75rem / $calc-dtm
+		@include smp
+				height: 75rem / $calc-sml
+		.spacer
+				@for $i from 1 through 2
+						&:nth-child(#{$i})
+								margin-top: #{$i * 16}rem
+								@include xl
+										margin-top: #{$i * 16}rem / $calc-xl
+								@include lg
+										margin-top: #{$i * 16}rem / $calc-lg
+				@include isMobile
+						display: none
+		#ad-info 
+				// white-space: nowrap
+				position: absolute
+				margin-top: 12.0625rem
+				margin-left: 15%
+				@include isMobile
+						position: relative
+				@include xl
+						margin-top: 12.0625rem / $calc-xl
+						margin-left: 15% / $calc-xl
+				@include lg
+						margin-top: 12.0625rem / $calc-lg
+						margin-left: 15% / $calc-lg
+				@include mdl
+						margin-top: 5.8125rem / $calc-mdl
+						margin-left: 0
+						width: 45rem / $calc-mdl
+				@include mdp
+						margin-top: 5.8125rem / $calc-mdp
+						margin-left: 0
+						width: 45rem / $calc-mdp
+				@include sml
+						margin-top: 5.8125rem / $calc-sml
+						margin-left: 0
+						width: 45rem / $calc-sml
+				@include smp
+						margin-top: 5.8125rem / $calc-sml
+						margin-left: 0
+						width: 45rem / $calc-sml
+		#ad-button 
+				position: absolute
+				border-color: rgb(0, 0, 0)
+				background: rgba(255, 255, 255, 0)
+				margin-top: 38.375rem
+				margin-left: 15%
+				cursor: pointer
+				font-family: 'noto-sansM'
+				border-style: solid
+				border-width: 2px
+				font-size: 1.375rem
+				width: 15.0625rem
+				height: 3.3125rem
+				@include isMobile
+						position: relative
+				@include xl
+						margin-top: 38.375rem / $calc-xl
+						margin-left: 15% / $calc-xl
+						font-size: 1.375rem / $calc-xl
+						width: 15.0625rem / $calc-xl
+						height: 3.3125rem / $calc-xl
+				@include lg
+						margin-top: 41.8125rem / $calc-lg
+						margin-left: 15% / $calc-lg
+						font-size: 1.375rem / $calc-xl
+						width: 15.0625rem / $calc-xl
+						height: 3.3125rem / $calc-xl
+				@include mdl
+						margin-top: 4.1875rem / $calc-mdl
+						font-size: 2.125rem / $calc-mdl
+						margin-left: 0
+						width: 45rem / $calc-mdl
+						height: 5rem / $calc-mdl
+				@include mdp
+						margin-top: 4.1875rem / $calc-mdp
+						margin-left: 0
+						font-size: 2.125rem / $calc-mdp
+						width: 45rem / $calc-mdp
+						height: 5rem / $calc-mdp
+				@include sml
+						font-size: 2.125rem / $calc-sml
+						margin-top: 4.1875rem / $calc-sml
+						margin-left: 0
+						font-size: 2.125rem / $calc-sml
+						width: 45rem / $calc-sml
+						height: 5rem / $calc-sml
+				@include smp
+						font-size: 2.125rem / $calc-sml
+						margin-top: 4.1875rem / $calc-sml
+						margin-left: 0
+						font-size: 2.125rem / $calc-sml
+						width: 45rem / $calc-sml
+						height: 5rem / $calc-sml
+				&:focus
+						outline: none
+				&:active
+						background: black
+						color: white
+		#device-container
+				width: 61.8125rem
+				height: 52rem
+				@include isMobile
+						content: url('/images/mobile/small-device.png')
+						// position: absolute
+						right: 0
+						bottom: 0
+				@include mdl
+						width: 45rem / $calc-mdl
+						height: 33.3125rem / $calc-mdl
+				@include mdp
+						width: 45rem / $calc-mdp
+						height: 33.3125rem / $calc-mdp
+				@include sml
+						width: 45rem / $calc-sml
+						height: 33.3125rem / $calc-sml
+				@include smp
+						width: 45rem / $calc-smp
+						height: 33.3125rem / $calc-smp
+				#big-device 
+						position: absolute
+						content: url('/images/desktop/big-device.png')
+						width: 58rem
+						height: 52.5rem
+						right: 0
+						bottom: 0
+						@include isMobile
+								display: none
+						@include xl
+								width: 58rem / $calc-xl
+								height: 52.5rem / $calc-xl
+						@include lg
+								width: 58rem / $calc-lg
+								height: 52.5rem / $calc-lg
+				#small-device 
+						position: absolute
+						content: url('/images/desktop/small-device.png')
+						width: 37.1875rem
+						height: 34.3125rem
+						right: 27.5625rem
+						bottom: 0
+						@include isMobile
+								display: none
+						@include xl
+								width: 37.1875rem / $calc-xl
+								height: 34.3125rem / $calc-xl
+								right: 28.5625rem / $calc-xl
+								bottom: 1.75rem / $calc-xl
+						@include lg
+								width: 37.1875rem / $calc-lg
+								height: 34.3125rem / $calc-lg
+								right: 28.5625rem / $calc-lg
+								bottom: 1.75rem / $calc-lg

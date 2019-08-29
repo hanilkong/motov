@@ -1,0 +1,279 @@
+@import src/_config
+@import src/_profile
+
+#container-4 
+		position: relative
+		display: flex
+		flex-direction: row
+		align-items: center
+		background: #f2f2f2
+		width: 100%
+		height: 33.75rem
+		@include isMobile
+				flex-direction: column
+				align-items: center
+		@include xl
+				height: 33.75rem / $calc-xl
+		@include lg
+				height: 33.75rem / $calc-xl
+		@include mdl
+				height: 132.25rem / $calc-mdl
+		@include mdp
+				height: 132.25rem / $calc-mdp
+		@include sml
+				height: 132.25rem / $calc-mdl
+		@include smp
+				height: 160.25rem / $calc-smp
+		.spacer
+				@for $i from 1 through 3
+						&:nth-child(#{$i})
+								margin-top: #{$i * 8}rem
+								@include xl
+										margin-top: #{$i * 8}rem / $calc-xl
+								@include lg
+										margin-top: #{$i * 8}rem / $calc-lg
+				@include isMobile
+						display: none
+		#reveal-elements 
+				display: flex
+				flex-direction: row
+				margin: auto
+				width: 80%
+				@include isMobile
+						flex-direction: column
+						align-items: center
+						width: 100%
+						height: 80%
+						margin: auto;
+				.reveal-anim
+						&:nth-child(1)
+								margin-top: 6.125rem
+								width: 33%;
+								@include xl
+										margin-top: 6.125rem / $calc-xl
+										// width: 33%; / $calc-xl
+								@include lg
+										margin-top: 6.125rem / $calc-lg
+										// width: 33%; / $calc-lg
+								@include isMobile
+										margin-top: 0
+										height: 33%;
+						&:nth-child(2)
+								margin-top: 6.625rem
+								width: 33%;
+								@include xl
+										margin-top: 6.625rem / $calc-xl
+										margin-left: 10% / $calc-xl
+								@include lg
+										margin-top: 6.625rem / $calc-lg
+										margin-left: 10% / $calc-lg
+								@include isMobile
+										margin-top: 0
+										height: 33%;
+						&:nth-child(3)
+								margin-top: 6.625rem
+								width: 33%;
+								@include xl
+										margin-top: 6.625rem / $calc-xl
+										margin-left: 10% / $calc-xl
+								@include lg
+										margin-top: 6.625rem / $calc-lg
+										margin-left: 10% / $calc-lg
+								@include isMobile
+										margin-top: 0
+										height: 33%;
+		#first-mover-ads-icon 
+				content: url('/images/desktop/first-mover-ads.png')
+				width: 10rem
+				height: 9.5625rem
+				@include isMobile
+						content: url('/images/mobile/small-icon1.png')
+				@include xl
+						width: 10rem / $calc-xl
+						height: 9.5625rem / $calc-xl
+				@include lg
+						width: 10rem / $calc-xl
+						height: 9.5625rem / $calc-xl
+				@include mdl
+						width: 14.875rem / $calc-mdl
+						height: 14.25rem / $calc-mdl
+				@include mdp
+						width: 14.875rem / $calc-mdp
+						height: 14.25rem / $calc-mdp
+				@include sml
+						width: 14.875rem / $calc-sml
+						height: 14.25rem / $calc-sml
+				@include smp
+						width: 14.875rem / $calc-smp
+						height: 14.25rem / $calc-smp
+		.box-title1
+				white-space: nowrap
+				font-family: 'noto-sansR'
+				font-size: 2.25rem
+				margin-top: 2.0625rem
+				@include xl
+						font-size: 2.25rem / $calc-xl
+						margin-top: 2.0625rem / $calc-xl
+				@include lg
+						font-size: 2.25rem / $calc-xl
+						margin-top: 2.0625rem / $calc-xl
+				@include mdl
+						font-size: 3rem / $calc-mdl
+						margin-top: 3.25rem / $calc-mdl
+				@include mdp
+						font-size: 3rem / $calc-mdp
+						margin-top: 3.25rem / $calc-mdp
+				@include sml
+						font-size: 3rem / $calc-sml
+						margin-top: 3.25rem / $calc-sml
+				@include smp
+						font-size: 3rem / $calc-smp
+						margin-top: 3.25rem / $calc-smp
+		.box-body-container1
+				white-space: nowrap
+				display: flex
+				flex-direction: column
+				align-items: center
+				margin-top: 2.5625rem
+				@include xl
+						margin-top: 2.5625rem / $calc-xl
+				@include lg
+						margin-top: 2.5625rem / $calc-xl
+				@include mdl
+						margin-top: 3.8125rem / $calc-mdl
+				@include mdp
+						margin-top: 3.8125rem / $calc-mdp
+				@include sml
+						margin-top: 3.8125rem / $calc-sml
+				@include smp
+						margin-top: 3.8125rem / $calc-smp
+		#geo-targeting-ads-icon 
+				content: url('/images/desktop/geo-targeting-ads.png')
+				width: 11.1875rem
+				height: 8.5625rem
+				@include isMobile
+						content: url('/images/mobile/small-icon2.png')
+				@include xl
+						width: 11.1875rem / $calc-xl
+						height: 8.5625rem / $calc-xl
+				@include lg
+						width: 11.1875rem / $calc-xl
+						height: 8.5625rem / $calc-xl
+				@include mdl
+						width: 16.6875rem / $calc-mdl
+						height: 12.75rem / $calc-mdl
+				@include mdp
+						width: 16.6875rem / $calc-mdp
+						height: 12.75rem / $calc-mdp
+				@include sml
+						width: 16.6875rem / $calc-sml
+						height: 12.75rem / $calc-sml
+				@include smp
+						width: 17.68875rem / $calc-smp
+						height: 12.75rem / $calc-smp
+		.box-title2
+				white-space: nowrap
+				font-family: 'noto-sansR'
+				font-size: 2.25rem
+				margin-top: 2.5625rem
+				@include xl
+						font-size: 2.25rem / $calc-xl
+						margin-top: 2.5625rem / $calc-xl
+				@include lg
+						font-size: 2.25rem / $calc-xl
+						margin-top: 2.5625rem / $calc-xl
+				@include mdl
+						font-size: 3rem / $calc-mdl
+						margin-top: 4.30625rem / $calc-mdl
+				@include mdp
+						font-size: 3rem / $calc-mdp
+						margin-top: 4.30625rem / $calc-mdp
+				@include sml
+						font-size: 3rem / $calc-sml
+						margin-top: 4.30625rem / $calc-sml
+				@include smp
+						font-size: 3rem / $calc-smp
+						margin-top: 4.30625rem / $calc-smp
+		.box-body-container2 
+				white-space: nowrap
+				display: flex
+				flex-direction: column
+				align-items: center
+				margin-top: 2.0625rem
+				@include xl
+						margin-top: 2.0625rem / $calc-xl
+				@include lg
+						margin-top: 2.0625rem / $calc-xl
+				@include mdl
+						margin-top: 3.1875rem / $calc-mdl
+				@include mdp
+						margin-top: 3.1875rem / $calc-mdp
+				@include sml
+						margin-top: 3.1875rem / $calc-sml
+				@include smp
+						margin-top: 3.1875rem / $calc-smp
+		#intelligent-ap-icon 
+				content: url('/images/desktop/intelligent-ap.png')
+				width: 11.75rem
+				height: 8.625rem
+				@include isMobile
+						content: url('/images/mobile/small-icon3.png')
+				@include xl
+						width: 11.75rem / $calc-xl
+						height: 8.625rem / $calc-xl
+				@include lg
+						width: 11.75rem / $calc-xl
+						height: 8.625rem / $calc-xl
+				@include mdl
+						width: 17.5rem / $calc-mdl
+						height: 12.8125rem / $calc-mdl
+				@include mdp
+						width: 17.5rem / $calc-mdp
+						height: 12.8125rem / $calc-mdp
+				@include sml
+						width: 17.5rem / $calc-sml
+						height: 12.8125rem / $calc-sml
+				@include smp
+						width: 17.5rem / $calc-smp
+						height: 12.8125rem / $calc-smp
+		.box-title3 
+				white-space: nowrap
+				font-family: 'noto-sansR'
+				font-size: 2.25rem
+				margin-top: 2.4375rem
+				@include xl
+						font-size: 2.25rem / $calc-xl
+						margin-top: 2.4375rem / $calc-xl
+				@include lg
+						font-size: 2.25rem / $calc-xl
+						margin-top: 2.4375rem / $calc-xl
+				@include mdl
+						font-size: 3rem / $calc-mdl
+						margin-top: 4.24rem / $calc-mdl
+				@include mdp
+						font-size: 3rem / $calc-mdp
+						margin-top: 4.24rem / $calc-mdp
+				@include sml
+						font-size: 3rem / $calc-sml
+						margin-top: 4.24rem / $calc-sml
+				@include smp
+						font-size: 3rem / $calc-smp
+						margin-top: 4.24rem / $calc-smp
+		.box-body-container3 
+				white-space: nowrap
+				display: flex
+				flex-direction: column
+				align-items: center
+				margin-top: 2.0625rem
+				@include xl
+						margin-top: 2.0625rem / $calc-xl
+				@include lg
+						margin-top: 2.0625rem / $calc-xl
+				@include mdl
+						margin-top: 3.1875rem / $calc-mdl
+				@include mdp
+						margin-top: 3.1875rem / $calc-mdp
+				@include sml
+						margin-top: 3.1875rem / $calc-sml
+				@include smp
+						margin-top: 3.1875rem / $calc-smp

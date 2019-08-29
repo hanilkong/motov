@@ -1,0 +1,448 @@
+@import ./_profile
+
+$calc-xl: 1.5
+$calc-lg: 2
+$calc-mdl: 1
+$calc-mdp: 1.2
+$calc-sml: 2.1
+$calc-smp: 3.2
+$calc-dtm: 1.875
+
+@font-face 
+		font-family: 'noto-sansL'
+		src: url('/stylesheets/fonts/NotoSansKR-Light.woff2')
+
+@font-face 
+		font-family: 'noto-sansM'
+		src: url('/stylesheets/fonts/NotoSansKR-Medium.woff2')
+
+@font-face 
+		font-family: 'noto-sansB'
+		src: url('/stylesheets/fonts/NotoSansKR-Bold.woff2')
+
+@font-face 
+		font-family: 'noto-sansR'
+		src: url('/stylesheets/fonts/NotoSansKR-Regular.woff2')
+
+@font-face 
+		font-family: 'nanum-squareB'
+		src: url('/stylesheets/fonts/NanumSquareB.woff2')
+
+@font-face 
+		font-family: 'nanum-squareR'
+		src: url('/stylesheets/fonts/NanumSquareR.woff2')
+
+html 
+    overflow-x: hidden
+
+body 
+		display: flex
+		flex-direction: column
+		overflow-x: hidden
+
+#scroll-menu-container
+		display: flex
+		flex-direction: column
+		#scroll-menu 
+				position: fixed
+				background: #ffffff
+				z-index: 2
+				opacity: 0
+				-webkit-transform: translateY(-2.5rem)
+				-moz-transform: translateY(-2.5rem)
+				-ms-transform: translateY(-2.5rem)
+				-o-transform: translateY(-2.5rem)
+				transform: translateY(-2.5rem)
+				-webkit-transition: all 0.6s ease-out
+				-moz-transition: all 0.6s ease-out
+				-ms-transition: all 0.6s ease-out
+				-o-transition: all 0.6s ease-out
+				transition: all 0.6s ease-out
+				width: 100%
+				height: 10rem
+				@include isMobile
+						-webkit-transform: none
+						-moz-transform: none
+						-ms-transform: none
+						-o-transform: none
+						transform: none
+						height: 5rem
+						opacity: 1
+						border-bottom: 1px solid #f0f0f0
+				&.visible
+						opacity: 1
+						-webkit-transform: none
+						-moz-transform: none
+						-ms-transform: none
+						-o-transform: none
+						transform: none
+				
+
+#top-menu 
+		position: fixed
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		z-index: 3
+		width: 100%
+		#logo-container
+				margin-top: 2.5rem
+				margin-left: 20%
+				@include isMobile
+						margin-top: .6875rem
+						margin-left: 2.5rem
+				@include sml
+						margin-top: .6875rem / $calc-sml
+						margin-left: 2.5rem / $calc-sml
+				@include smp
+						margin-top: .6875rem / $calc-smp
+						margin-left: 2.5rem / $calc-smp
+				#logo
+						content: url('/images/desktop/logo.png')
+						width: 14.0625rem
+						height: 4rem
+						@include isMobile
+								content: url('/images/mobile/green-small-icon.png')
+								width: 7.9375rem
+								height: 3.5625rem
+						&.visible
+								content: url('/images/desktop/green-logo.png')
+								@include isMobile
+										content: url('/images/mobile/green-small-icon.png')
+										width: 7.9375rem
+										height: 3.5625rem
+		#navi
+				font-family: 'noto-sansM'
+				display: flex
+				flex-direction: row
+				justify-content: flex-end
+				white-space: nowrap
+				list-style: none
+				float: right
+				width: 100%
+				font-size: 1.25rem
+				margin-top: 3.53375rem
+				margin-right: 10%
+				@include xl
+						margin-right: 10% / $calc-xl
+				@include lg
+						margin-right: 10% / $calc-lg
+				@include mdl
+						margin-right: 10% / $calc-mdl
+				@include isMobile
+						display: none
+				li 
+						display: inline-block
+						margin-right: 5rem
+						@include xl
+								margin-right: 5rem / $calc-xl
+						@include lg
+								margin-right: 5rem / $calc-lg
+						@include mdl
+								margin-right: 5rem
+						@include mdp
+								margin-right: 5rem / $calc-mdp
+						@include sml
+								margin-right: 5rem
+						@include smp
+								margin-right: 5rem / $calc-smp
+						a 
+								text-decoration: none
+								color: #ffffff
+								&.visible
+										text-decoration: none
+										color: #000000
+.navi-active
+		color: #3d8e9b !important
+
+.navi 
+		position: absolute
+
+.container-navi-title 
+		font-family: 'noto-sansB'
+		display: flex
+		flex-direction: column
+		font-size: 1.5rem
+		@include xl
+				font-size: 1.5rem / $calc-xl
+		@include lg
+				font-size: 1.5rem / $calc-xl
+		@include isMobile
+				font-size: 2rem
+
+.container-navi-title-underbar 
+		margin-top: 1.25rem
+		width: 2rem
+		height: 2px
+		background-color: #000000
+		@include xl
+				margin-top: 1.25rem / $calc-xl
+				width: 2rem / $calc-xl
+		@include lg
+				margin-top: 1.25rem / $calc-lg
+				width: 2rem / $calc-xl
+		@include isMobile
+				margin-top: 1.6875rem
+				width: 3rem
+
+.container-title 
+		font-family: 'noto-sansR'
+		font-size: 2.25rem
+		margin: 2.875rem 0 1.25rem 0
+		@include xl
+				font-size: 2.25rem / $calc-xl
+				margin: 2.875rem / $calc-xl 0 1.25rem / $calc-xl 0
+		@include lg
+				font-size: 2.25rem / $calc-lg
+				margin: 2.875rem / $calc-lg 0 1.25rem / $calc-lg 0
+		@include isMobile
+				font-size: 3rem
+				margin: 1.6875rem 0 1.9375rem 0
+		@include sml
+				font-size: 3rem / $calc-sml
+				margin: 1.6875rem  / $calc-sml 0 1.9375rem  / $calc-sml 0
+		@include smp
+				font-size: 3rem / $calc-sml
+				margin: 1.6875rem  / $calc-sml 0 1.9375rem  / $calc-sml 0
+		
+
+.container-text-body 
+		font-family: 'noto-sansL'
+		font-size: 1.375rem
+		@include xl
+				font-size: 1.375rem / $calc-xl
+		@include lg
+				font-size: 1.375rem / $calc-xl
+		@include isMobile
+				font-size: 1.625rem
+		@include sml
+				font-size: 1.625rem / $calc-sml
+		@include smp
+				font-size: 1.625rem / $calc-sml
+
+.popup_contents
+		position: absolute
+		display: flex
+		flex-direction: column
+		align-items: center
+		background-color: #fff
+		opacity: 0
+		.popup-text-container
+				margin: 3.375rem 0 1.875rem 0
+				width: 31.25rem
+				@include isPhone
+						margin: 3.375rem / $calc-dtm 0 1.875rem / $calc-dtm 0
+						width: 31.25rem / $calc-dtm
+				.popup-title
+						font-family: 'noto-sansB'
+						font-size: 2.125rem
+						@include isPhone
+								font-size: 2.125rem / $calc-dtm
+				.popup-info
+						font-family: 'noto-sansR'
+						color: #666666
+						font-size: 1.25rem
+						margin-top: 1.5625rem
+						@include isPhone
+								font-size: 1.25rem / $calc-dtm
+								margin-top: 1.5625rem / $calc-dtm
+		.popup-input-container
+				display: flex
+				flex-direction: column
+				.popup-input
+						font-family: 'noto-sansR'
+						margin-bottom: .625rem
+						font-size: 1.875rem
+						width: 31.25rem
+						height: 3.75rem
+						@include isPhone
+								margin-bottom: .625rem / $calc-dtm
+								font-size: 1.875rem / $calc-dtm
+								width: 31.25rem / $calc-dtm
+								height: 3.75rem / $calc-dtm
+						&::placeholder
+								color: #008d9b
+				#referral-code::placeholder
+						color: #999999
+		.code-info
+				font-family: 'noto-sansR'
+				color: #de4854
+				margin-top: 2.1rem
+				font-size: 1.5rem
+				@include isPhone
+						margin-top: 2.1rem / $calc-dtm
+						font-size: 1.5rem / $calc-dtm
+		.popup-button-container
+				display: flex
+				flex-direction: row
+				margin-top: 3.4375rem
+				@include isPhone
+						margin-top: 3.4375rem / $calc-dtm
+				.popup-close
+						font-family: 'noto-sansM'
+						border: none
+						background: #cccccc
+						text-align: center
+						cursor: pointer
+						width: 18.125rem
+						height: 5rem
+						line-height: 5rem
+						font-size: 1.875rem
+						@include isPhone
+								width: 18.125rem / $calc-dtm
+								height: 5rem / $calc-dtm
+								line-height: 5rem / $calc-dtm
+								font-size: 1.875rem / $calc-dtm
+				.popup-send
+						font-family: 'noto-sansM'
+						background: #008e9b
+						border: none
+						color: #ffffff
+						text-align: center
+						vertical-align: center
+						cursor: pointer
+						width: 18.125rem
+						height: 5rem
+						line-height: 5rem
+						font-size: 1.875rem
+						@include isPhone
+								width: 18.125rem / $calc-dtm
+								height: 5rem / $calc-dtm
+								line-height: 5rem / $calc-dtm
+								font-size: 1.875rem / $calc-dtm
+
+.white-motov 
+		color: #ffffff
+
+.black-motov 
+		color: #121212
+
+.gray-motov 
+		color: #666666
+
+.opacity-motov 
+		color: rgba(255, 255, 255, 0.749)
+
+.back-white
+		background-color: #ffffff
+
+.point-motov 
+		color: #fe9b00
+		font-size: 1.25rem
+		@include xl
+		  	font-size: 1.25rem / $calc-xl
+		@include lg
+				font-size: 1.25rem / $calc-xl
+		@include isMobile
+			display: none
+
+.text-center 
+		text-align: center
+
+.desktop
+		@include isMobile
+				display: none
+
+.mobile
+		display: none
+		@include isMobile
+				display: inline
+
+.reveal-anim 
+		opacity: 0
+		-webkit-transform: translateX(-2.5px)
+		-moz-transform: translateX(-2.5px)
+		-ms-transform: translateX(-2.5px)
+		-o-transform: translateX(-2.5px)
+		transform: translateX(-2.5px)
+		-webkit-transition: all 0.6s ease-out
+		-moz-transition: all 0.6s ease-out
+		-ms-transition: all 0.6s ease-out
+		-o-transition: all 0.6s ease-out
+		transition: all 0.6s ease-out
+		@include isMobile
+				opacity: 1
+				-webkit-transform: 0
+				-moz-transform: 0
+				-ms-transform: 0
+				-o-transform: 0
+				transform: 0
+				-webkit-transition: none
+				-moz-transition: none
+				-ms-transition: none
+				-o-transition: none
+				transition: none
+
+.reveal-anim.visible 
+		opacity: 1
+		-webkit-transform: none
+		-moz-transform: none
+		-ms-transform: none
+		-o-transform: none
+		transform: none
+
+.spacer 
+		position: absolute
+
+.box 
+		display: flex
+		flex-direction: column
+		align-items: center
+
+.box-body-text 
+		font-family: 'noto-sansL'
+		font-size: 1.25rem
+		@include xl
+				font-size: 1.25rem / $calc-xl
+		@include lg
+				font-size: 1.25rem / $calc-xl
+		@include mdl
+				font-size: 1.7225rem / $calc-mdl
+		@include mdp
+				font-size: 1.7225rem / $calc-mdp
+		@include sml
+				font-size: 1.7225rem / $calc-sml
+		@include smp
+				font-size: 1.7225rem / $calc-smp
+		
+
+.video-js 
+		outline: none
+
+.video-js button 
+		outline: none
+		
+.video-js .vjs-big-play-button
+		border: none !important
+		background-color: transparent !important
+		width: 6.3125rem !important
+		height: 6.3125rem !important
+		@include xl
+				width: 6.3125rem / $calc-xl !important
+				height: 6.3125rem / $calc-xl !important
+		@include lg
+				width: 6.3125rem / $calc-lg !important
+				height: 6.3125rem / $calc-lg !important
+		@include mdl
+				width: 7.42rem / $calc-mdl  !important
+				height: 7.42rem / $calc-mdl  !important
+		@include mdp
+				width: 7.42rem / $calc-mdp !important
+				height: 7.42rem / $calc-mdp !important
+		@include sml
+				width: 7.42rem / $calc-sml !important
+				height: 7.42rem / $calc-sml  !important
+		@include smp
+				width: 7.42rem / $calc-smp !important
+				height: 7.42rem / $calc-smp  !important
+		
+
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before
+		color: transparent
+		background-image: url('/images/desktop/player_big_button.png')
+		// background-position: 55% calc(50% - 0px)
+		background-repeat: no-repeat
+		-webkit-background-size: contain
+		-moz-background-size: contain
+		-o-background-size: contain
+		background-size: contain

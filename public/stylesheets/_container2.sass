@@ -1,0 +1,133 @@
+@import src/_config
+@import src/_profile
+
+#container-2 
+		position: relative
+		width: 100%
+		background: #ffffff
+		display: flex
+		flex-direction: row
+		height: 30.25rem
+		@include isMobile
+				flex-direction: column-reverse
+				align-items: center  
+				justify-content: flex-end
+				width: auto
+		@include xl
+				height: 30.25rem / $calc-xl
+		@include lg
+				height: 30.25rem / $calc-lg
+		@include mdl
+				// min-width: 45rem / $calc-mdl
+				height: 56.375rem / $calc-mdl
+		@include mdp
+				// min-width: 45rem / $calc-mdp
+				height: 56.375rem / $calc-mdl
+		@include sml
+				// min-width: 45rem / $calc-sml
+				height: 56.375rem / $calc-mdp
+		@include smp
+				// min-width: 45rem  / $calc-smp
+				height: 60.375rem / $calc-sml
+		#player-container 
+				display: flex
+				flex-direction: column
+				width: 50%
+				height: 100%
+				margin-top: 5rem
+				@include xl
+						margin-top: 5rem / $calc-xl
+				@include lg
+						margin-top: 5rem / $calc-lg
+				@include isMobile
+						width: auto
+						height: auto
+						margin-top: 2.5625rem
+						// margin-bottom: 5rem
+						align-items: center
+				#player
+						margin-left: 30%
+						width: 36.1875rem
+						height: 20.375rem
+						@include xl
+								margin-left: 30% / $calc-xl
+								width: 36.1875rem / $calc-xl
+								height: 20.375rem / $calc-xl
+						@include lg
+								margin-left: 30% / $calc-lg
+								width: 36.1875rem / $calc-lg
+								height: 20.375rem / $calc-lg
+						@include mdl
+								margin-left: 0
+								width: 40.25rem / $calc-mdl
+								height: 22.6875rem / $calc-mdl
+						@include mdp
+								margin-left: 0
+								width: 40.25rem / $calc-mdp
+								height: 22.6875rem / $calc-mdp
+						@include sml
+								margin-left: 0
+								width: 40.25rem / $calc-mdp
+								height: 22.6875rem / $calc-mdp
+						@include smp
+								margin-left: 0
+								width: 40.25rem / $calc-sml
+								height: 22.6875rem / $calc-sml
+				#player-info 
+						font-family: 'noto-sansR'
+						color: #999999
+						margin-left: 30%
+						font-size: .875rem
+						margin-top: 1.125rem
+						@include isMobile
+								margin-left: auto
+						@include xl
+								margin-left: 30% / $calc-xl
+								font-size: .875rem / $calc-xl
+								margin-top: 1.125rem / $calc-xl
+						@include lg
+								margin-left: 30% / $calc-lg
+								font-size: .875rem / $calc-lg
+								margin-top: 1.125rem / $calc-lg
+						@include mdl
+								// margin-left: 0
+								font-size: 1.125rem / $calc-mdl
+								margin-top: 1.0625rem / $calc-mdl
+								width: 40.25rem / $calc-mdl
+						@include mdp
+								// margin-left: 0
+								font-size: 1.125rem / $calc-mdp
+								margin-top: 1.0625rem / $calc-mdp
+								width: 40.25rem / $calc-mdp
+						@include sml
+								// margin-left: 0
+								font-size: 1.125rem / $calc-sml
+								margin-top: 1.0625rem / $calc-sml
+								width: 40.25rem / $calc-mdp
+						@include smp
+								// margin-left: 0
+								font-size: 1.125rem / $calc-smp
+								margin-top: 1.0625rem / $calc-smp
+								width: 40.25rem / $calc-sml
+		#container-2-text-container
+				white-space: nowrap
+				width: 50%
+				margin-top: 5rem
+				@include xl
+						margin-top: 5rem / $calc-xl
+				@include lg
+						margin-top: 5rem / $calc-lg
+				@include mdl
+						margin-top: 5rem / $calc-mdl
+						width: 40.25rem / $calc-mdl
+				@include mdp
+						margin-top: 5rem / $calc-mdp
+						width: 40.25rem / $calc-mdp
+				@include sml
+						margin-top: 5rem / $calc-sml
+						width: 40.25rem / $calc-mdp
+				@include smp
+						margin-top: 5rem / $calc-smp
+						width: 40.25rem / $calc-sml
+				
+				

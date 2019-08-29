@@ -1,0 +1,75 @@
+@import src/_config
+@import src/_profile
+
+#container-1 
+		position: relative
+		background: url('/images/desktop/back-1.jpg')
+		-webkit-background-size: cover
+		-moz-background-size: cover
+		-o-background-size: cover
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center
+		display: flex
+		flex-direction: column
+		overflow: hidden
+		min-width: 120rem
+		min-height: 67.5rem
+		@include isMobile
+				background: url('/images/mobile/small_back-1.jpg')
+				-webkit-background-size: cover
+				-moz-background-size: cover
+				-o-background-size: cover
+				background-size: cover
+				background-repeat: no-repeat
+				display: flex
+				flex-direction: column
+		@include xl
+				min-width: 120rem / $calc-xl
+				min-height: 67.5rem / $calc-xl
+		@include lg
+				min-width: 120rem / $calc-lg
+				min-height: 67.5rem / $calc-lg
+		@include mdl
+				min-width: 45rem / $calc-mdl
+				min-height: 80rem / $calc-mdl
+		@include mdp
+				min-width: 45rem / $calc-mdp
+				min-height: 80rem / $calc-mdp
+		@include sml
+				min-width: 45rem / $calc-sml
+				min-height: 80rem / $calc-mdp
+		@include smp
+				min-width: 45rem / $calc-smp
+				min-height: 80rem / $calc-sml
+		#container-1-text-1
+				font-family: 'nanum-squareB'
+				text-align: center
+				color: #ffffff
+				margin-top: 21rem
+				font-size: 2.625rem
+				letter-spacing: 2.7rem 
+				@include xl
+						margin-top: 21rem / $calc-xl
+						font-size: 2.625rem / $calc-xl
+						letter-spacing: 2.7rem / $calc-xl
+				@include lg
+						margin-top: 21rem / $calc-lg
+						font-size: 2.625rem / $calc-lg
+						letter-spacing: 2.7rem / $calc-lg
+				@include isMobile
+						display: none
+		#container-1-text-2
+				font-family: 'nanum-squareR'
+				color: #ffffff
+				text-align: center
+				margin-top: 4.625rem
+				font-size: 1.75rem
+				@include xl
+						margin-top: 4.625rem / $calc-xl
+						font-size: 1.75rem / $calc-xl
+				@include lg
+						margin-top: 4.625rem / $calc-lg
+						font-size: 1.75rem / $calc-lg
+				@include isMobile
+						display: none
