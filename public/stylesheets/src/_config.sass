@@ -90,20 +90,8 @@ body
 				height: 5rem
 		#logo-container
 				margin-left: 20%
-				@include xl
-						margin-left: 20%
-				@include lg
-						margin-left: 20% / $calc-lg
-				@include mdl
-						margin-left: 20% / $calc-mdl
-				@include mdp
-						margin-left: 20% / $calc-mdp
-				@include sml
-						margin-top: .6875rem / $calc-sml
-						margin-left: 20% / $calc-sml
-				@include smp
-						margin-top: .6875rem / $calc-smp
-						margin-left: 20% / $calc-smp
+				@include isMobile
+						margin-left: 5%
 				#logo
 						content: url('/images/desktop/logo.png')
 						width: 14.0625rem
@@ -356,18 +344,9 @@ body
 				display: inline
 
 .container
-		@include xl
-				padding-left: 20%
-		@include lg
-				padding-left: 20% / $calc-lg
-		@include mdl
-				padding-left: 20% / $calc-mdl
-		@include mdp
-				padding-left: 20% / $calc-mdp
-		@include sml
-				padding-left: 20% / $calc-sml
-		@include smp
-				padding-left: 20% / $calc-smp
+		padding-left: 20%
+		@include isMobile
+				padding-left: 5%
 
 .reveal-anim 
 		opacity: 0

@@ -9,7 +9,8 @@
 				display: flex
 				flex-direction: column
 				align-items: center
-				align-self: center
+		@include isMobile
+				align-items: flex-start
 		@include xl
 				height: 48rem / $calc-xl
 		@include lg
@@ -71,12 +72,11 @@
 				margin-left: 20%
 				@include isMobile
 						position: relative
+						margin-left: 5%
 				@include xl
 						margin-top: 11.8125rem / $calc-xl
-						margin-left: 20% / $calc-xl
 				@include lg
 						margin-top: 11.8125rem / $calc-lg
-						margin-left: 20% / $calc-lg
 				@include mdl
 						margin-top: 6.3125rem / $calc-mdl
 						width: 50.155rem / $calc-mdl

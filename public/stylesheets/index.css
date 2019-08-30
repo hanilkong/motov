@@ -82,26 +82,9 @@ body {
       height: 5rem; } }
   #top-menu #logo-container {
     margin-left: 20%; }
-    @media screen and (min-width: 1281px) and (max-width: 1920px) {
+    @media screen and (max-width: 1024px) {
       #top-menu #logo-container {
-        margin-left: 20%; } }
-    @media screen and (min-width: 1025px) and (max-width: 1280px) {
-      #top-menu #logo-container {
-        margin-left: 13.33333%; } }
-    @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-      #top-menu #logo-container {
-        margin-left: 20%; } }
-    @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-      #top-menu #logo-container {
-        margin-left: 16.66667%; } }
-    @media screen and (min-width: 481px) and (max-width: 767px) {
-      #top-menu #logo-container {
-        margin-top: 0.32738rem;
-        margin-left: 9.52381%; } }
-    @media screen and (min-width: 320px) and (max-width: 480px) {
-      #top-menu #logo-container {
-        margin-top: 0.21484rem;
-        margin-left: 6.25%; } }
+        margin-left: 5%; } }
     #top-menu #logo-container #logo {
       content: url("/images/desktop/logo.png");
       width: 14.0625rem;
@@ -392,29 +375,11 @@ body {
     .mobile {
       display: inline; } }
 
-@media screen and (min-width: 1281px) and (max-width: 1920px) {
-  .container {
-    padding-left: 20%; } }
-
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .container {
-    padding-left: 13.33333%; } }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .container {
-    padding-left: 20%; } }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .container {
-    padding-left: 16.66667%; } }
-
-@media screen and (min-width: 481px) and (max-width: 767px) {
-  .container {
-    padding-left: 9.52381%; } }
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .container {
-    padding-left: 6.25%; } }
+.container {
+  padding-left: 20%; }
+  @media screen and (max-width: 1024px) {
+    .container {
+      padding-left: 5%; } }
 
 .reveal-anim {
   opacity: 0;
@@ -609,26 +574,9 @@ body {
       height: 5rem; } }
   #top-menu #logo-container {
     margin-left: 20%; }
-    @media screen and (min-width: 1281px) and (max-width: 1920px) {
+    @media screen and (max-width: 1024px) {
       #top-menu #logo-container {
-        margin-left: 20%; } }
-    @media screen and (min-width: 1025px) and (max-width: 1280px) {
-      #top-menu #logo-container {
-        margin-left: 13.33333%; } }
-    @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-      #top-menu #logo-container {
-        margin-left: 20%; } }
-    @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-      #top-menu #logo-container {
-        margin-left: 16.66667%; } }
-    @media screen and (min-width: 481px) and (max-width: 767px) {
-      #top-menu #logo-container {
-        margin-top: 0.32738rem;
-        margin-left: 9.52381%; } }
-    @media screen and (min-width: 320px) and (max-width: 480px) {
-      #top-menu #logo-container {
-        margin-top: 0.21484rem;
-        margin-left: 6.25%; } }
+        margin-left: 5%; } }
     #top-menu #logo-container #logo {
       content: url("/images/desktop/logo.png");
       width: 14.0625rem;
@@ -919,29 +867,11 @@ body {
     .mobile {
       display: inline; } }
 
-@media screen and (min-width: 1281px) and (max-width: 1920px) {
-  .container {
-    padding-left: 20%; } }
-
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .container {
-    padding-left: 13.33333%; } }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .container {
-    padding-left: 20%; } }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .container {
-    padding-left: 16.66667%; } }
-
-@media screen and (min-width: 481px) and (max-width: 767px) {
-  .container {
-    padding-left: 9.52381%; } }
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .container {
-    padding-left: 6.25%; } }
+.container {
+  padding-left: 20%; }
+  @media screen and (max-width: 1024px) {
+    .container {
+      padding-left: 5%; } }
 
 .reveal-anim {
   opacity: 0;
@@ -1132,8 +1062,7 @@ body {
     white-space: nowrap;
     list-style: none;
     float: left;
-    height: 80%;
-    margin-left: 9rem; }
+    height: 80%; }
     @media screen and (max-width: 1024px) {
       #hamburger-menu #hamburger-navi {
         font-size: 1.06667rem; } }
@@ -1227,26 +1156,9 @@ body {
       height: 5rem; } }
   #top-menu #logo-container {
     margin-left: 20%; }
-    @media screen and (min-width: 1281px) and (max-width: 1920px) {
+    @media screen and (max-width: 1024px) {
       #top-menu #logo-container {
-        margin-left: 20%; } }
-    @media screen and (min-width: 1025px) and (max-width: 1280px) {
-      #top-menu #logo-container {
-        margin-left: 13.33333%; } }
-    @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-      #top-menu #logo-container {
-        margin-left: 20%; } }
-    @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-      #top-menu #logo-container {
-        margin-left: 16.66667%; } }
-    @media screen and (min-width: 481px) and (max-width: 767px) {
-      #top-menu #logo-container {
-        margin-top: 0.32738rem;
-        margin-left: 9.52381%; } }
-    @media screen and (min-width: 320px) and (max-width: 480px) {
-      #top-menu #logo-container {
-        margin-top: 0.21484rem;
-        margin-left: 6.25%; } }
+        margin-left: 5%; } }
     #top-menu #logo-container #logo {
       content: url("/images/desktop/logo.png");
       width: 14.0625rem;
@@ -1537,29 +1449,11 @@ body {
     .mobile {
       display: inline; } }
 
-@media screen and (min-width: 1281px) and (max-width: 1920px) {
-  .container {
-    padding-left: 20%; } }
-
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .container {
-    padding-left: 13.33333%; } }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .container {
-    padding-left: 20%; } }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .container {
-    padding-left: 16.66667%; } }
-
-@media screen and (min-width: 481px) and (max-width: 767px) {
-  .container {
-    padding-left: 9.52381%; } }
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .container {
-    padding-left: 6.25%; } }
+.container {
+  padding-left: 20%; }
+  @media screen and (max-width: 1024px) {
+    .container {
+      padding-left: 5%; } }
 
 .reveal-anim {
   opacity: 0;
@@ -1692,6 +1586,7 @@ body {
       -o-background-size: cover;
       background-size: cover;
       background-repeat: no-repeat;
+      background-position: center;
       display: flex;
       flex-direction: column;
       align-items: center; } }
@@ -1701,24 +1596,24 @@ body {
       min-height: 67.5rem; } }
   @media screen and (min-width: 1025px) and (max-width: 1280px) {
     #container-1 {
-      min-width: 80rem;
+      min-width: 53.33333rem;
       min-height: 45rem; } }
   @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     #container-1 {
-      min-width: 45rem;
-      min-height: 90rem; } }
+      min-width: 30rem;
+      min-height: 100rem; } }
   @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     #container-1 {
-      min-width: 37.5rem;
-      min-height: 75rem; } }
+      min-width: 25rem;
+      min-height: 83.33333rem; } }
   @media screen and (min-width: 481px) and (max-width: 767px) {
     #container-1 {
-      min-width: 21.42857rem;
-      min-height: 75rem; } }
+      min-width: 14.28571rem;
+      min-height: 83.33333rem; } }
   @media screen and (min-width: 320px) and (max-width: 480px) {
     #container-1 {
-      min-width: 14.0625rem;
-      min-height: 42.85714rem; } }
+      min-width: 9.375rem;
+      min-height: 47.61905rem; } }
   #container-1 #container-1-text-1 {
     font-family: 'nanum-squareB';
     text-align: center;
@@ -1753,33 +1648,45 @@ body {
   #container-1 #container-1-text-body {
     font-family: 'nanum-squareB';
     color: #ffffff;
-    width: 23.75rem;
     height: 19.375rem;
-    margin-top: 16rem; }
+    margin-top: 16rem;
+    font-size: 4.125rem;
+    width: 23.75rem; }
     @media screen and (max-width: 767px) {
       #container-1 #container-1-text-body {
-        margin-top: 7.61905rem; } }
+        width: 19.16667rem;
+        margin-top: 7.61905rem;
+        font-size: 1.96429rem; } }
     #container-1 #container-1-text-body div:nth-child(1) {
       white-space: nowrap;
-      width: 23.75rem;
-      font-size: 4.125rem;
       letter-spacing: 6.3rem; }
-    #container-1 #container-1-text-body div:nth-child(6) {
+      @media screen and (max-width: 767px) {
+        #container-1 #container-1-text-body div:nth-child(1) {
+          letter-spacing: 6rem; } }
+    #container-1 #container-1-text-body div:nth-child(3) {
       white-space: nowrap;
-      width: 23.75rem;
-      font-size: 4.125rem;
       letter-spacing: 2.9rem; }
-    #container-1 #container-1-text-body div:nth-child(11) {
+      @media screen and (max-width: 767px) {
+        #container-1 #container-1-text-body div:nth-child(3) {
+          letter-spacing: 3.4rem; } }
+    #container-1 #container-1-text-body div:nth-child(5) {
       white-space: nowrap;
-      width: 23.75rem;
-      font-size: 4.125rem;
       letter-spacing: 0.8rem; }
+      @media screen and (max-width: 767px) {
+        #container-1 #container-1-text-body div:nth-child(5) {
+          letter-spacing: 1.5rem; } }
   #container-1 #container-1-text-bottom {
     position: absolute;
     font-family: 'nanum-squareR';
+    width: 100%;
+    text-align: center;
     color: #ffffff;
     font-size: 1.875rem;
     bottom: 5.9375rem; }
+    @media screen and (max-width: 767px) {
+      #container-1 #container-1-text-bottom {
+        font-size: 1.19048rem;
+        bottom: 4.94792rem; } }
 
 @font-face {
   font-family: 'noto-sansL';
@@ -1865,26 +1772,9 @@ body {
       height: 5rem; } }
   #top-menu #logo-container {
     margin-left: 20%; }
-    @media screen and (min-width: 1281px) and (max-width: 1920px) {
+    @media screen and (max-width: 1024px) {
       #top-menu #logo-container {
-        margin-left: 20%; } }
-    @media screen and (min-width: 1025px) and (max-width: 1280px) {
-      #top-menu #logo-container {
-        margin-left: 13.33333%; } }
-    @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-      #top-menu #logo-container {
-        margin-left: 20%; } }
-    @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-      #top-menu #logo-container {
-        margin-left: 16.66667%; } }
-    @media screen and (min-width: 481px) and (max-width: 767px) {
-      #top-menu #logo-container {
-        margin-top: 0.32738rem;
-        margin-left: 9.52381%; } }
-    @media screen and (min-width: 320px) and (max-width: 480px) {
-      #top-menu #logo-container {
-        margin-top: 0.21484rem;
-        margin-left: 6.25%; } }
+        margin-left: 5%; } }
     #top-menu #logo-container #logo {
       content: url("/images/desktop/logo.png");
       width: 14.0625rem;
@@ -2175,29 +2065,11 @@ body {
     .mobile {
       display: inline; } }
 
-@media screen and (min-width: 1281px) and (max-width: 1920px) {
-  .container {
-    padding-left: 20%; } }
-
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .container {
-    padding-left: 13.33333%; } }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .container {
-    padding-left: 20%; } }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .container {
-    padding-left: 16.66667%; } }
-
-@media screen and (min-width: 481px) and (max-width: 767px) {
-  .container {
-    padding-left: 9.52381%; } }
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .container {
-    padding-left: 6.25%; } }
+.container {
+  padding-left: 20%; }
+  @media screen and (max-width: 1024px) {
+    .container {
+      padding-left: 5%; } }
 
 .reveal-anim {
   opacity: 0;
@@ -2529,26 +2401,9 @@ body {
       height: 5rem; } }
   #top-menu #logo-container {
     margin-left: 20%; }
-    @media screen and (min-width: 1281px) and (max-width: 1920px) {
+    @media screen and (max-width: 1024px) {
       #top-menu #logo-container {
-        margin-left: 20%; } }
-    @media screen and (min-width: 1025px) and (max-width: 1280px) {
-      #top-menu #logo-container {
-        margin-left: 13.33333%; } }
-    @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-      #top-menu #logo-container {
-        margin-left: 20%; } }
-    @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-      #top-menu #logo-container {
-        margin-left: 16.66667%; } }
-    @media screen and (min-width: 481px) and (max-width: 767px) {
-      #top-menu #logo-container {
-        margin-top: 0.32738rem;
-        margin-left: 9.52381%; } }
-    @media screen and (min-width: 320px) and (max-width: 480px) {
-      #top-menu #logo-container {
-        margin-top: 0.21484rem;
-        margin-left: 6.25%; } }
+        margin-left: 5%; } }
     #top-menu #logo-container #logo {
       content: url("/images/desktop/logo.png");
       width: 14.0625rem;
@@ -2839,29 +2694,11 @@ body {
     .mobile {
       display: inline; } }
 
-@media screen and (min-width: 1281px) and (max-width: 1920px) {
-  .container {
-    padding-left: 20%; } }
-
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .container {
-    padding-left: 13.33333%; } }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .container {
-    padding-left: 20%; } }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .container {
-    padding-left: 16.66667%; } }
-
-@media screen and (min-width: 481px) and (max-width: 767px) {
-  .container {
-    padding-left: 9.52381%; } }
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .container {
-    padding-left: 6.25%; } }
+.container {
+  padding-left: 20%; }
+  @media screen and (max-width: 1024px) {
+    .container {
+      padding-left: 5%; } }
 
 .reveal-anim {
   opacity: 0;
@@ -2980,8 +2817,10 @@ body {
     #container-3 {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      align-self: center; } }
+      align-items: center; } }
+  @media screen and (max-width: 1024px) {
+    #container-3 {
+      align-items: flex-start; } }
   @media screen and (min-width: 1281px) and (max-width: 1920px) {
     #container-3 {
       height: 48rem; } }
@@ -3053,15 +2892,14 @@ body {
     margin-left: 20%; }
     @media screen and (max-width: 1024px) {
       #container-3 #container-3-text-container {
-        position: relative; } }
+        position: relative;
+        margin-left: 5%; } }
     @media screen and (min-width: 1281px) and (max-width: 1920px) {
       #container-3 #container-3-text-container {
-        margin-top: 11.8125rem;
-        margin-left: 20%; } }
+        margin-top: 11.8125rem; } }
     @media screen and (min-width: 1025px) and (max-width: 1280px) {
       #container-3 #container-3-text-container {
-        margin-top: 7.875rem;
-        margin-left: 13.33333%; } }
+        margin-top: 7.875rem; } }
     @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
       #container-3 #container-3-text-container {
         margin-top: 6.3125rem;
@@ -3163,26 +3001,9 @@ body {
       height: 5rem; } }
   #top-menu #logo-container {
     margin-left: 20%; }
-    @media screen and (min-width: 1281px) and (max-width: 1920px) {
+    @media screen and (max-width: 1024px) {
       #top-menu #logo-container {
-        margin-left: 20%; } }
-    @media screen and (min-width: 1025px) and (max-width: 1280px) {
-      #top-menu #logo-container {
-        margin-left: 13.33333%; } }
-    @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-      #top-menu #logo-container {
-        margin-left: 20%; } }
-    @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-      #top-menu #logo-container {
-        margin-left: 16.66667%; } }
-    @media screen and (min-width: 481px) and (max-width: 767px) {
-      #top-menu #logo-container {
-        margin-top: 0.32738rem;
-        margin-left: 9.52381%; } }
-    @media screen and (min-width: 320px) and (max-width: 480px) {
-      #top-menu #logo-container {
-        margin-top: 0.21484rem;
-        margin-left: 6.25%; } }
+        margin-left: 5%; } }
     #top-menu #logo-container #logo {
       content: url("/images/desktop/logo.png");
       width: 14.0625rem;
@@ -3473,29 +3294,11 @@ body {
     .mobile {
       display: inline; } }
 
-@media screen and (min-width: 1281px) and (max-width: 1920px) {
-  .container {
-    padding-left: 20%; } }
-
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .container {
-    padding-left: 13.33333%; } }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .container {
-    padding-left: 20%; } }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .container {
-    padding-left: 16.66667%; } }
-
-@media screen and (min-width: 481px) and (max-width: 767px) {
-  .container {
-    padding-left: 9.52381%; } }
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .container {
-    padding-left: 6.25%; } }
+.container {
+  padding-left: 20%; }
+  @media screen and (max-width: 1024px) {
+    .container {
+      padding-left: 5%; } }
 
 .reveal-anim {
   opacity: 0;
@@ -4055,26 +3858,9 @@ body {
       height: 5rem; } }
   #top-menu #logo-container {
     margin-left: 20%; }
-    @media screen and (min-width: 1281px) and (max-width: 1920px) {
+    @media screen and (max-width: 1024px) {
       #top-menu #logo-container {
-        margin-left: 20%; } }
-    @media screen and (min-width: 1025px) and (max-width: 1280px) {
-      #top-menu #logo-container {
-        margin-left: 13.33333%; } }
-    @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-      #top-menu #logo-container {
-        margin-left: 20%; } }
-    @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-      #top-menu #logo-container {
-        margin-left: 16.66667%; } }
-    @media screen and (min-width: 481px) and (max-width: 767px) {
-      #top-menu #logo-container {
-        margin-top: 0.32738rem;
-        margin-left: 9.52381%; } }
-    @media screen and (min-width: 320px) and (max-width: 480px) {
-      #top-menu #logo-container {
-        margin-top: 0.21484rem;
-        margin-left: 6.25%; } }
+        margin-left: 5%; } }
     #top-menu #logo-container #logo {
       content: url("/images/desktop/logo.png");
       width: 14.0625rem;
@@ -4365,29 +4151,11 @@ body {
     .mobile {
       display: inline; } }
 
-@media screen and (min-width: 1281px) and (max-width: 1920px) {
-  .container {
-    padding-left: 20%; } }
-
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .container {
-    padding-left: 13.33333%; } }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .container {
-    padding-left: 20%; } }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .container {
-    padding-left: 16.66667%; } }
-
-@media screen and (min-width: 481px) and (max-width: 767px) {
-  .container {
-    padding-left: 9.52381%; } }
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .container {
-    padding-left: 6.25%; } }
+.container {
+  padding-left: 20%; }
+  @media screen and (max-width: 1024px) {
+    .container {
+      padding-left: 5%; } }
 
 .reveal-anim {
   opacity: 0;
@@ -4507,7 +4275,6 @@ body {
     #container-5 {
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: space-between;
       width: auto; } }
   @media screen and (min-width: 1281px) and (max-width: 1920px) {
@@ -4553,34 +4320,29 @@ body {
     margin-left: 20%; }
     @media screen and (max-width: 1024px) {
       #container-5 #ad-info {
-        position: relative; } }
+        position: relative;
+        margin-left: 5%; } }
     @media screen and (min-width: 1281px) and (max-width: 1920px) {
       #container-5 #ad-info {
-        margin-top: 12.0625rem;
-        margin-left: 20%; } }
+        margin-top: 12.0625rem; } }
     @media screen and (min-width: 1025px) and (max-width: 1280px) {
       #container-5 #ad-info {
-        margin-top: 8.04167rem;
-        margin-left: 13.33333%; } }
+        margin-top: 8.04167rem; } }
     @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
       #container-5 #ad-info {
         margin-top: 5.8125rem;
-        margin-left: 0;
         width: 45rem; } }
     @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
       #container-5 #ad-info {
         margin-top: 4.84375rem;
-        margin-left: 0;
         width: 37.5rem; } }
     @media screen and (min-width: 481px) and (max-width: 767px) {
       #container-5 #ad-info {
         margin-top: 2.76786rem;
-        margin-left: 0;
         width: 21.42857rem; } }
     @media screen and (min-width: 320px) and (max-width: 480px) {
       #container-5 #ad-info {
         margin-top: 2.76786rem;
-        margin-left: 0;
         width: 21.42857rem; } }
   #container-5 #ad-button {
     position: absolute;
@@ -4597,18 +4359,17 @@ body {
     height: 3.3125rem; }
     @media screen and (max-width: 1024px) {
       #container-5 #ad-button {
-        position: relative; } }
+        position: relative;
+        margin-left: 5%; } }
     @media screen and (min-width: 1281px) and (max-width: 1920px) {
       #container-5 #ad-button {
         margin-top: 38.375rem;
-        margin-left: 20%;
         font-size: 1.375rem;
         width: 15.0625rem;
         height: 3.3125rem; } }
     @media screen and (min-width: 1025px) and (max-width: 1280px) {
       #container-5 #ad-button {
         margin-top: 27.875rem;
-        margin-left: 13.33333%;
         font-size: 1.375rem;
         width: 15.0625rem;
         height: 3.3125rem; } }
@@ -4616,13 +4377,11 @@ body {
       #container-5 #ad-button {
         margin-top: 4.1875rem;
         font-size: 2.125rem;
-        margin-left: 0;
         width: 45rem;
         height: 5rem; } }
     @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
       #container-5 #ad-button {
         margin-top: 3.48958rem;
-        margin-left: 0;
         font-size: 1.77083rem;
         width: 37.5rem;
         height: 4.16667rem; } }
@@ -4630,7 +4389,6 @@ body {
       #container-5 #ad-button {
         font-size: 1.0119rem;
         margin-top: 1.99405rem;
-        margin-left: 0;
         font-size: 1.0119rem;
         width: 21.42857rem;
         height: 2.38095rem; } }
@@ -4638,7 +4396,6 @@ body {
       #container-5 #ad-button {
         font-size: 1.0119rem;
         margin-top: 1.99405rem;
-        margin-left: 0;
         font-size: 1.0119rem;
         width: 21.42857rem;
         height: 2.38095rem; } }
@@ -4797,26 +4554,9 @@ body {
       height: 5rem; } }
   #top-menu #logo-container {
     margin-left: 20%; }
-    @media screen and (min-width: 1281px) and (max-width: 1920px) {
+    @media screen and (max-width: 1024px) {
       #top-menu #logo-container {
-        margin-left: 20%; } }
-    @media screen and (min-width: 1025px) and (max-width: 1280px) {
-      #top-menu #logo-container {
-        margin-left: 13.33333%; } }
-    @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-      #top-menu #logo-container {
-        margin-left: 20%; } }
-    @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-      #top-menu #logo-container {
-        margin-left: 16.66667%; } }
-    @media screen and (min-width: 481px) and (max-width: 767px) {
-      #top-menu #logo-container {
-        margin-top: 0.32738rem;
-        margin-left: 9.52381%; } }
-    @media screen and (min-width: 320px) and (max-width: 480px) {
-      #top-menu #logo-container {
-        margin-top: 0.21484rem;
-        margin-left: 6.25%; } }
+        margin-left: 5%; } }
     #top-menu #logo-container #logo {
       content: url("/images/desktop/logo.png");
       width: 14.0625rem;
@@ -5107,29 +4847,11 @@ body {
     .mobile {
       display: inline; } }
 
-@media screen and (min-width: 1281px) and (max-width: 1920px) {
-  .container {
-    padding-left: 20%; } }
-
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .container {
-    padding-left: 13.33333%; } }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .container {
-    padding-left: 20%; } }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .container {
-    padding-left: 16.66667%; } }
-
-@media screen and (min-width: 481px) and (max-width: 767px) {
-  .container {
-    padding-left: 9.52381%; } }
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .container {
-    padding-left: 6.25%; } }
+.container {
+  padding-left: 20%; }
+  @media screen and (max-width: 1024px) {
+    .container {
+      padding-left: 5%; } }
 
 .reveal-anim {
   opacity: 0;
@@ -5264,8 +4986,7 @@ body {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-      align-items: center;
-      padding-left: 0; } }
+      padding-left: 5%; } }
   @media screen and (min-width: 1281px) and (max-width: 1920px) {
     #container-6 {
       min-width: 120rem;
@@ -5456,26 +5177,9 @@ body {
       height: 5rem; } }
   #top-menu #logo-container {
     margin-left: 20%; }
-    @media screen and (min-width: 1281px) and (max-width: 1920px) {
+    @media screen and (max-width: 1024px) {
       #top-menu #logo-container {
-        margin-left: 20%; } }
-    @media screen and (min-width: 1025px) and (max-width: 1280px) {
-      #top-menu #logo-container {
-        margin-left: 13.33333%; } }
-    @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-      #top-menu #logo-container {
-        margin-left: 20%; } }
-    @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-      #top-menu #logo-container {
-        margin-left: 16.66667%; } }
-    @media screen and (min-width: 481px) and (max-width: 767px) {
-      #top-menu #logo-container {
-        margin-top: 0.32738rem;
-        margin-left: 9.52381%; } }
-    @media screen and (min-width: 320px) and (max-width: 480px) {
-      #top-menu #logo-container {
-        margin-top: 0.21484rem;
-        margin-left: 6.25%; } }
+        margin-left: 5%; } }
     #top-menu #logo-container #logo {
       content: url("/images/desktop/logo.png");
       width: 14.0625rem;
@@ -5766,29 +5470,11 @@ body {
     .mobile {
       display: inline; } }
 
-@media screen and (min-width: 1281px) and (max-width: 1920px) {
-  .container {
-    padding-left: 20%; } }
-
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .container {
-    padding-left: 13.33333%; } }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .container {
-    padding-left: 20%; } }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .container {
-    padding-left: 16.66667%; } }
-
-@media screen and (min-width: 481px) and (max-width: 767px) {
-  .container {
-    padding-left: 9.52381%; } }
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .container {
-    padding-left: 6.25%; } }
+.container {
+  padding-left: 20%; }
+  @media screen and (max-width: 1024px) {
+    .container {
+      padding-left: 5%; } }
 
 .reveal-anim {
   opacity: 0;
@@ -6197,26 +5883,9 @@ body {
       height: 5rem; } }
   #top-menu #logo-container {
     margin-left: 20%; }
-    @media screen and (min-width: 1281px) and (max-width: 1920px) {
+    @media screen and (max-width: 1024px) {
       #top-menu #logo-container {
-        margin-left: 20%; } }
-    @media screen and (min-width: 1025px) and (max-width: 1280px) {
-      #top-menu #logo-container {
-        margin-left: 13.33333%; } }
-    @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-      #top-menu #logo-container {
-        margin-left: 20%; } }
-    @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-      #top-menu #logo-container {
-        margin-left: 16.66667%; } }
-    @media screen and (min-width: 481px) and (max-width: 767px) {
-      #top-menu #logo-container {
-        margin-top: 0.32738rem;
-        margin-left: 9.52381%; } }
-    @media screen and (min-width: 320px) and (max-width: 480px) {
-      #top-menu #logo-container {
-        margin-top: 0.21484rem;
-        margin-left: 6.25%; } }
+        margin-left: 5%; } }
     #top-menu #logo-container #logo {
       content: url("/images/desktop/logo.png");
       width: 14.0625rem;
@@ -6507,29 +6176,11 @@ body {
     .mobile {
       display: inline; } }
 
-@media screen and (min-width: 1281px) and (max-width: 1920px) {
-  .container {
-    padding-left: 20%; } }
-
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .container {
-    padding-left: 13.33333%; } }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .container {
-    padding-left: 20%; } }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .container {
-    padding-left: 16.66667%; } }
-
-@media screen and (min-width: 481px) and (max-width: 767px) {
-  .container {
-    padding-left: 9.52381%; } }
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .container {
-    padding-left: 6.25%; } }
+.container {
+  padding-left: 20%; }
+  @media screen and (max-width: 1024px) {
+    .container {
+      padding-left: 5%; } }
 
 .reveal-anim {
   opacity: 0;

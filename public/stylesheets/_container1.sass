@@ -22,6 +22,7 @@
 				-o-background-size: cover
 				background-size: cover
 				background-repeat: no-repeat
+				background-position: center
 				display: flex
 				flex-direction: column
 				align-items: center
@@ -73,41 +74,41 @@
 		#container-1-text-body
 				font-family: 'nanum-squareB'
 				color: #ffffff
-				width: 23.75rem
 				height: 19.375rem
 				margin-top: 16rem
+				font-size: 4.125rem
+				width: 23.75rem
 				@include isPhone
+						width: 23rem / $calc-mdp
 						margin-top: 16rem / $calc-sml
-				
+						font-size: 4.125rem / $calc-sml
 				div:nth-child(1)
 						white-space: nowrap
-						width: 23.75rem
-						font-size: 4.125rem
 						letter-spacing: 6.3rem
-				div:nth-child(6)
+						@include isPhone
+								letter-spacing: 6rem
+				div:nth-child(3)
 						white-space: nowrap
-						width: 23.75rem
-						font-size: 4.125rem
 						letter-spacing: 2.9rem
-				div:nth-child(11)
+						@include isPhone
+								letter-spacing: 3.4rem
+				div:nth-child(5)
 						white-space: nowrap
-						width: 23.75rem
-						font-size: 4.125rem
 						letter-spacing: 0.8rem
+						@include isPhone
+								letter-spacing: 1.5rem
 		#container-1-text-bottom
 				position: absolute
 				font-family: 'nanum-squareR'
+				width: 100%
+				text-align: center
 				color: #ffffff
 				font-size: 1.875rem
 				bottom: 5.9375rem
-				// @include mdl
-				// 		font-size: 1.875rem / $calc-mdl
-				// @include mdp
-				// 		font-size: 1.875rem / $calc-mdp
-				// @include sml
-				// 		font-size: 1.875rem / $calc-sml
-				// @include smp
-				// 		font-size: 1.875rem / $calc-sml
+				@include isPhone
+						font-size: 2.5rem / $calc-sml
+						bottom: 5.9375rem / $calc-mdp
+				
 				
 					
 					
