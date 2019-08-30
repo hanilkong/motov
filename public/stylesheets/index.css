@@ -1,31 +1,31 @@
 @font-face {
   font-family: 'noto-sansL';
-  src: url("fonts/NotoSansKR-Light.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Light.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansM';
-  src: url("fonts/NotoSansKR-Medium.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Medium.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansB';
-  src: url("fonts/NotoSansKR-Bold.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Bold.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansR';
-  src: url("fonts/NotoSansKR-Regular.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Regular.woff2");
 }
 
 @font-face {
   font-family: 'nanum-squareB';
-  src: url("fonts/NanumSquareB.woff2");
+  src: url("/stylesheets/fonts/NanumSquareB.woff2");
 }
 
 @font-face {
   font-family: 'nanum-squareR';
-  src: url("fonts/NanumSquareR.woff2");
+  src: url("/stylesheets/fonts/NanumSquareR.woff2");
 }
 
 html {
@@ -115,6 +115,18 @@ body {
 @media screen and (max-width: 1024px) {
   #top-menu #logo-container {
     margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
+  #top-menu #logo-container {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  #top-menu #logo-container {
+    margin-left: 13.33333%;
   }
 }
 
@@ -638,6 +650,18 @@ body {
 @media screen and (max-width: 1024px) {
   .container {
     padding-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
+  .container {
+    padding-left: 20%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    padding-left: 13.33333%;
   }
 }
 
@@ -789,32 +813,32 @@ body {
 
 @font-face {
   font-family: 'noto-sansL';
-  src: url("fonts/NotoSansKR-Light.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Light.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansM';
-  src: url("fonts/NotoSansKR-Medium.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Medium.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansB';
-  src: url("fonts/NotoSansKR-Bold.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Bold.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansR';
-  src: url("fonts/NotoSansKR-Regular.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Regular.woff2");
 }
 
 @font-face {
   font-family: 'nanum-squareB';
-  src: url("fonts/NanumSquareB.woff2");
+  src: url("/stylesheets/fonts/NanumSquareB.woff2");
 }
 
 @font-face {
   font-family: 'nanum-squareR';
-  src: url("fonts/NanumSquareR.woff2");
+  src: url("/stylesheets/fonts/NanumSquareR.woff2");
 }
 
 html {
@@ -904,6 +928,18 @@ body {
 @media screen and (max-width: 1024px) {
   #top-menu #logo-container {
     margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
+  #top-menu #logo-container {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  #top-menu #logo-container {
+    margin-left: 13.33333%;
   }
 }
 
@@ -1427,6 +1463,18 @@ body {
 @media screen and (max-width: 1024px) {
   .container {
     padding-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
+  .container {
+    padding-left: 20%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    padding-left: 13.33333%;
   }
 }
 
@@ -1716,32 +1764,32 @@ body {
 
 @font-face {
   font-family: 'noto-sansL';
-  src: url("fonts/NotoSansKR-Light.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Light.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansM';
-  src: url("fonts/NotoSansKR-Medium.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Medium.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansB';
-  src: url("fonts/NotoSansKR-Bold.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Bold.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansR';
-  src: url("fonts/NotoSansKR-Regular.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Regular.woff2");
 }
 
 @font-face {
   font-family: 'nanum-squareB';
-  src: url("fonts/NanumSquareB.woff2");
+  src: url("/stylesheets/fonts/NanumSquareB.woff2");
 }
 
 @font-face {
   font-family: 'nanum-squareR';
-  src: url("fonts/NanumSquareR.woff2");
+  src: url("/stylesheets/fonts/NanumSquareR.woff2");
 }
 
 html {
@@ -1831,6 +1879,18 @@ body {
 @media screen and (max-width: 1024px) {
   #top-menu #logo-container {
     margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
+  #top-menu #logo-container {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  #top-menu #logo-container {
+    margin-left: 13.33333%;
   }
 }
 
@@ -2354,6 +2414,18 @@ body {
 @media screen and (max-width: 1024px) {
   .container {
     padding-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
+  .container {
+    padding-left: 20%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    padding-left: 13.33333%;
   }
 }
 
@@ -2698,32 +2770,32 @@ body {
 
 @font-face {
   font-family: 'noto-sansL';
-  src: url("fonts/NotoSansKR-Light.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Light.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansM';
-  src: url("fonts/NotoSansKR-Medium.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Medium.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansB';
-  src: url("fonts/NotoSansKR-Bold.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Bold.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansR';
-  src: url("fonts/NotoSansKR-Regular.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Regular.woff2");
 }
 
 @font-face {
   font-family: 'nanum-squareB';
-  src: url("fonts/NanumSquareB.woff2");
+  src: url("/stylesheets/fonts/NanumSquareB.woff2");
 }
 
 @font-face {
   font-family: 'nanum-squareR';
-  src: url("fonts/NanumSquareR.woff2");
+  src: url("/stylesheets/fonts/NanumSquareR.woff2");
 }
 
 html {
@@ -2813,6 +2885,18 @@ body {
 @media screen and (max-width: 1024px) {
   #top-menu #logo-container {
     margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
+  #top-menu #logo-container {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  #top-menu #logo-container {
+    margin-left: 13.33333%;
   }
 }
 
@@ -3336,6 +3420,18 @@ body {
 @media screen and (max-width: 1024px) {
   .container {
     padding-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
+  .container {
+    padding-left: 20%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    padding-left: 13.33333%;
   }
 }
 
@@ -3684,7 +3780,7 @@ body {
   white-space: nowrap;
   width: 50%;
   margin-top: 5rem;
-  margin-left: 2.25rem;
+  margin-left: 6rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -3696,12 +3792,14 @@ body {
 @media screen and (min-width: 1281px) and (max-width: 1920px) {
   #container-2 #container-2-text-container {
     margin-top: 5rem;
+    margin-left: 6rem;
   }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
   #container-2 #container-2-text-container {
     margin-top: 3.33333rem;
+    margin-left: 4rem;
   }
 }
 
@@ -3735,32 +3833,32 @@ body {
 
 @font-face {
   font-family: 'noto-sansL';
-  src: url("fonts/NotoSansKR-Light.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Light.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansM';
-  src: url("fonts/NotoSansKR-Medium.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Medium.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansB';
-  src: url("fonts/NotoSansKR-Bold.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Bold.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansR';
-  src: url("fonts/NotoSansKR-Regular.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Regular.woff2");
 }
 
 @font-face {
   font-family: 'nanum-squareB';
-  src: url("fonts/NanumSquareB.woff2");
+  src: url("/stylesheets/fonts/NanumSquareB.woff2");
 }
 
 @font-face {
   font-family: 'nanum-squareR';
-  src: url("fonts/NanumSquareR.woff2");
+  src: url("/stylesheets/fonts/NanumSquareR.woff2");
 }
 
 html {
@@ -3850,6 +3948,18 @@ body {
 @media screen and (max-width: 1024px) {
   #top-menu #logo-container {
     margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
+  #top-menu #logo-container {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  #top-menu #logo-container {
+    margin-left: 13.33333%;
   }
 }
 
@@ -4373,6 +4483,18 @@ body {
 @media screen and (max-width: 1024px) {
   .container {
     padding-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
+  .container {
+    padding-left: 20%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    padding-left: 13.33333%;
   }
 }
 
@@ -4674,12 +4796,14 @@ body {
 @media screen and (min-width: 1281px) and (max-width: 1920px) {
   #container-3 #container-3-text-container {
     margin-top: 11.8125rem;
+    margin-left: 20%;
   }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
   #container-3 #container-3-text-container {
     margin-top: 7.875rem;
+    margin-left: 13.33333%;
   }
 }
 
@@ -4713,32 +4837,32 @@ body {
 
 @font-face {
   font-family: 'noto-sansL';
-  src: url("fonts/NotoSansKR-Light.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Light.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansM';
-  src: url("fonts/NotoSansKR-Medium.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Medium.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansB';
-  src: url("fonts/NotoSansKR-Bold.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Bold.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansR';
-  src: url("fonts/NotoSansKR-Regular.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Regular.woff2");
 }
 
 @font-face {
   font-family: 'nanum-squareB';
-  src: url("fonts/NanumSquareB.woff2");
+  src: url("/stylesheets/fonts/NanumSquareB.woff2");
 }
 
 @font-face {
   font-family: 'nanum-squareR';
-  src: url("fonts/NanumSquareR.woff2");
+  src: url("/stylesheets/fonts/NanumSquareR.woff2");
 }
 
 html {
@@ -4828,6 +4952,18 @@ body {
 @media screen and (max-width: 1024px) {
   #top-menu #logo-container {
     margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
+  #top-menu #logo-container {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  #top-menu #logo-container {
+    margin-left: 13.33333%;
   }
 }
 
@@ -5351,6 +5487,18 @@ body {
 @media screen and (max-width: 1024px) {
   .container {
     padding-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
+  .container {
+    padding-left: 20%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    padding-left: 13.33333%;
   }
 }
 
@@ -6186,32 +6334,32 @@ body {
 
 @font-face {
   font-family: 'noto-sansL';
-  src: url("fonts/NotoSansKR-Light.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Light.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansM';
-  src: url("fonts/NotoSansKR-Medium.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Medium.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansB';
-  src: url("fonts/NotoSansKR-Bold.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Bold.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansR';
-  src: url("fonts/NotoSansKR-Regular.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Regular.woff2");
 }
 
 @font-face {
   font-family: 'nanum-squareB';
-  src: url("fonts/NanumSquareB.woff2");
+  src: url("/stylesheets/fonts/NanumSquareB.woff2");
 }
 
 @font-face {
   font-family: 'nanum-squareR';
-  src: url("fonts/NanumSquareR.woff2");
+  src: url("/stylesheets/fonts/NanumSquareR.woff2");
 }
 
 html {
@@ -6301,6 +6449,18 @@ body {
 @media screen and (max-width: 1024px) {
   #top-menu #logo-container {
     margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
+  #top-menu #logo-container {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  #top-menu #logo-container {
+    margin-left: 13.33333%;
   }
 }
 
@@ -6824,6 +6984,18 @@ body {
 @media screen and (max-width: 1024px) {
   .container {
     padding-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
+  .container {
+    padding-left: 20%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    padding-left: 13.33333%;
   }
 }
 
@@ -7074,6 +7246,7 @@ body {
   position: absolute;
   margin-top: 12.0625rem;
   margin-left: 20%;
+  z-index: 1;
 }
 
 @media screen and (max-width: 1024px) {
@@ -7086,12 +7259,14 @@ body {
 @media screen and (min-width: 1281px) and (max-width: 1920px) {
   #container-5 #ad-info {
     margin-top: 12.0625rem;
+    margin-left: 20%;
   }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
   #container-5 #ad-info {
     margin-top: 8.04167rem;
+    margin-left: 13.33333%;
   }
 }
 
@@ -7136,6 +7311,7 @@ body {
   font-size: 1.375rem;
   width: 15.0625rem;
   height: 3.3125rem;
+  z-index: 1;
 }
 
 @media screen and (max-width: 1024px) {
@@ -7151,6 +7327,7 @@ body {
     font-size: 1.375rem;
     width: 15.0625rem;
     height: 3.3125rem;
+    margin-left: 20%;
   }
 }
 
@@ -7160,6 +7337,7 @@ body {
     font-size: 1.375rem;
     width: 15.0625rem;
     height: 3.3125rem;
+    margin-left: 13.33333%;
   }
 }
 
@@ -7316,32 +7494,32 @@ body {
 
 @font-face {
   font-family: 'noto-sansL';
-  src: url("fonts/NotoSansKR-Light.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Light.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansM';
-  src: url("fonts/NotoSansKR-Medium.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Medium.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansB';
-  src: url("fonts/NotoSansKR-Bold.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Bold.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansR';
-  src: url("fonts/NotoSansKR-Regular.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Regular.woff2");
 }
 
 @font-face {
   font-family: 'nanum-squareB';
-  src: url("fonts/NanumSquareB.woff2");
+  src: url("/stylesheets/fonts/NanumSquareB.woff2");
 }
 
 @font-face {
   font-family: 'nanum-squareR';
-  src: url("fonts/NanumSquareR.woff2");
+  src: url("/stylesheets/fonts/NanumSquareR.woff2");
 }
 
 html {
@@ -7431,6 +7609,18 @@ body {
 @media screen and (max-width: 1024px) {
   #top-menu #logo-container {
     margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
+  #top-menu #logo-container {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  #top-menu #logo-container {
+    margin-left: 13.33333%;
   }
 }
 
@@ -7954,6 +8144,18 @@ body {
 @media screen and (max-width: 1024px) {
   .container {
     padding-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
+  .container {
+    padding-left: 20%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    padding-left: 13.33333%;
   }
 }
 
@@ -8304,32 +8506,32 @@ body {
 
 @font-face {
   font-family: 'noto-sansL';
-  src: url("fonts/NotoSansKR-Light.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Light.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansM';
-  src: url("fonts/NotoSansKR-Medium.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Medium.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansB';
-  src: url("fonts/NotoSansKR-Bold.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Bold.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansR';
-  src: url("fonts/NotoSansKR-Regular.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Regular.woff2");
 }
 
 @font-face {
   font-family: 'nanum-squareB';
-  src: url("fonts/NanumSquareB.woff2");
+  src: url("/stylesheets/fonts/NanumSquareB.woff2");
 }
 
 @font-face {
   font-family: 'nanum-squareR';
-  src: url("fonts/NanumSquareR.woff2");
+  src: url("/stylesheets/fonts/NanumSquareR.woff2");
 }
 
 html {
@@ -8419,6 +8621,18 @@ body {
 @media screen and (max-width: 1024px) {
   #top-menu #logo-container {
     margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
+  #top-menu #logo-container {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  #top-menu #logo-container {
+    margin-left: 13.33333%;
   }
 }
 
@@ -8942,6 +9156,18 @@ body {
 @media screen and (max-width: 1024px) {
   .container {
     padding-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
+  .container {
+    padding-left: 20%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    padding-left: 13.33333%;
   }
 }
 
@@ -9492,32 +9718,32 @@ body {
 
 @font-face {
   font-family: 'noto-sansL';
-  src: url("fonts/NotoSansKR-Light.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Light.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansM';
-  src: url("fonts/NotoSansKR-Medium.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Medium.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansB';
-  src: url("fonts/NotoSansKR-Bold.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Bold.woff2");
 }
 
 @font-face {
   font-family: 'noto-sansR';
-  src: url("fonts/NotoSansKR-Regular.woff2");
+  src: url("/stylesheets/fonts/NotoSansKR-Regular.woff2");
 }
 
 @font-face {
   font-family: 'nanum-squareB';
-  src: url("fonts/NanumSquareB.woff2");
+  src: url("/stylesheets/fonts/NanumSquareB.woff2");
 }
 
 @font-face {
   font-family: 'nanum-squareR';
-  src: url("fonts/NanumSquareR.woff2");
+  src: url("/stylesheets/fonts/NanumSquareR.woff2");
 }
 
 html {
@@ -9607,6 +9833,18 @@ body {
 @media screen and (max-width: 1024px) {
   #top-menu #logo-container {
     margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
+  #top-menu #logo-container {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  #top-menu #logo-container {
+    margin-left: 13.33333%;
   }
 }
 
@@ -10130,6 +10368,18 @@ body {
 @media screen and (max-width: 1024px) {
   .container {
     padding-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
+  .container {
+    padding-left: 20%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    padding-left: 13.33333%;
   }
 }
 

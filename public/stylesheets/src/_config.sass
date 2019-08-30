@@ -10,27 +10,27 @@ $calc-dtm: 1.875
 
 @font-face 
 		font-family: 'noto-sansL'
-		src: url('fonts/NotoSansKR-Light.woff2')
+		src: url('/stylesheets/fonts/NotoSansKR-Light.woff2')
 
 @font-face 
 		font-family: 'noto-sansM'
-		src: url('fonts/NotoSansKR-Medium.woff2')
+		src: url('/stylesheets/fonts/NotoSansKR-Medium.woff2')
 
 @font-face 
 		font-family: 'noto-sansB'
-		src: url('fonts/NotoSansKR-Bold.woff2')
+		src: url('/stylesheets/fonts/NotoSansKR-Bold.woff2')
 
 @font-face 
 		font-family: 'noto-sansR'
-		src: url('fonts/NotoSansKR-Regular.woff2')
+		src: url('/stylesheets/fonts/NotoSansKR-Regular.woff2')
 
 @font-face 
 		font-family: 'nanum-squareB'
-		src: url('fonts/NanumSquareB.woff2')
+		src: url('/stylesheets/fonts/NanumSquareB.woff2')
 
 @font-face 
 		font-family: 'nanum-squareR'
-		src: url('fonts/NanumSquareR.woff2')
+		src: url('/stylesheets/fonts/NanumSquareR.woff2')
 
 html 
     overflow-x: hidden
@@ -92,6 +92,10 @@ body
 				margin-left: 20%
 				@include isMobile
 						margin-left: 5%
+				@include xl
+						margin-left: 20% / $calc-xl
+				@include lg
+						margin-left: 20% / $calc-lg
 				#logo
 						content: url('/images/desktop/logo.png')
 						width: 14.0625rem
@@ -347,6 +351,11 @@ body
 		padding-left: 20%
 		@include isMobile
 				padding-left: 5%
+		@include xl
+				padding-left: 20% / $calc-xl
+		@include lg
+				padding-left: 20% / $calc-lg
+		
 
 .reveal-anim 
 		opacity: 0

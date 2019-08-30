@@ -38,13 +38,16 @@
 				position: absolute
 				margin-top: 12.0625rem
 				margin-left: 20%
+				z-index: 1
 				@include isMobile
 						position: relative
 						margin-left: 5%
 				@include xl
 						margin-top: 12.0625rem / $calc-xl
+						margin-left: 20% / $calc-xl
 				@include lg
 						margin-top: 12.0625rem / $calc-lg
+						margin-left: 20% / $calc-lg
 				@include mdl
 						margin-top: 5.8125rem / $calc-mdl
 						width: 45rem / $calc-mdl
@@ -70,6 +73,7 @@
 				font-size: 1.375rem
 				width: 15.0625rem
 				height: 3.3125rem
+				z-index: 1
 				@include isMobile
 						position: relative
 						margin-left: 5%
@@ -78,11 +82,13 @@
 						font-size: 1.375rem / $calc-xl
 						width: 15.0625rem / $calc-xl
 						height: 3.3125rem / $calc-xl
+						margin-left: 20% / $calc-xl
 				@include lg
 						margin-top: 41.8125rem / $calc-lg
 						font-size: 1.375rem / $calc-xl
 						width: 15.0625rem / $calc-xl
 						height: 3.3125rem / $calc-xl
+						margin-left: 20% / $calc-lg
 				@include mdl
 						margin-top: 4.1875rem / $calc-mdl
 						font-size: 2.125rem / $calc-mdl
