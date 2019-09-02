@@ -10,27 +10,27 @@ $calc-dtm: 1.875
 
 @font-face 
 		font-family: 'noto-sansL'
-		src: url('/stylesheets/fonts/NotoSansKR-Light.woff2')
+		src: url('fonts/NotoSansKR-Light.woff2')
 
 @font-face 
 		font-family: 'noto-sansM'
-		src: url('/stylesheets/fonts/NotoSansKR-Medium.woff2')
+		src: url('fonts/NotoSansKR-Medium.woff2')
 
 @font-face 
 		font-family: 'noto-sansB'
-		src: url('/stylesheets/fonts/NotoSansKR-Bold.woff2')
+		src: url('fonts/NotoSansKR-Bold.woff2')
 
 @font-face 
 		font-family: 'noto-sansR'
-		src: url('/stylesheets/fonts/NotoSansKR-Regular.woff2')
+		src: url('fonts/NotoSansKR-Regular.woff2')
 
 @font-face 
 		font-family: 'nanum-squareB'
-		src: url('/stylesheets/fonts/NanumSquareB.woff2')
+		src: url('fonts/NanumSquareB.woff2')
 
 @font-face 
 		font-family: 'nanum-squareR'
-		src: url('/stylesheets/fonts/NanumSquareR.woff2')
+		src: url('fonts/NanumSquareR.woff2')
 
 html 
     overflow-x: hidden
@@ -180,14 +180,25 @@ body
 		@include lg
 				margin-top: 0.5rem / $calc-lg
 				width: 2rem / $calc-xl
-		@include isMobile
-				margin-top: 1.6875rem
+		@include mdl
+				margin-top: 1.6875rem / $calc-mdl
 				width: 3rem
+		@include mdp
+				margin-top: 1.6875rem / $calc-mdp
+				width: 3rem
+		@include sml
+				margin-top: 1.6875rem / $calc-sml
+				width: 3rem / $calc-mdp
+		@include smp
+				margin-top: 1.6875rem / $calc-smp
+				width: 3rem / $calc-mdp
+		
 
 .container-title 
 		font-family: 'noto-sansR'
 		font-size: 2.25rem
 		margin: 2.875rem 0 1.25rem 0
+		width: 100%
 		@include xl
 				font-size: 2.25rem
 				margin: 2.875rem / $calc-xl 0 1.25rem / $calc-xl 0
@@ -203,21 +214,23 @@ body
 		@include smp
 				font-size: 3rem / $calc-sml
 				margin: 1.6875rem  / $calc-sml 0 1.9375rem  / $calc-sml 0
-		
 
 .container-text-body
 		font-family: 'noto-sansL'
 		font-size: 1.375rem
+		width: 100%
 		@include xl
+				width: 100%
 				font-size: 1.375rem
 		@include lg
-				font-size: 1.375rem / $calc-xl
+				width: 100%
+				font-size: 1.5rem / $calc-lg
 		@include isMobile
 				font-size: 1.625rem
 		@include sml
-				font-size: 1.625rem / $calc-sml
+				font-size: 2rem / $calc-sml
 		@include smp
-				font-size: 1.625rem / $calc-sml
+				font-size: 2rem / $calc-sml
 
 .popup_contents
 		position: absolute
@@ -328,10 +341,11 @@ body
 .point-motov 
 		color: #fe9b00
 		font-size: 1.25rem
+		display: block
 		@include xl
 		  	font-size: 1.25rem
 		@include lg
-				font-size: 1.25rem / $calc-xl
+				font-size: 1.4rem / $calc-lg
 		@include isMobile
 			display: none
 
@@ -339,22 +353,23 @@ body
 		text-align: center
 
 .desktop
+		display: block
 		@include isMobile
 				display: none
 
 .mobile
 		display: none
 		@include isMobile
-				display: inline
+				display: block
 
 .container
-		padding-left: 20%
+		padding: 0 20% 0 20%
 		@include isMobile
-				padding-left: 5%
+				padding: 0 5% 0 5%
 		@include xl
-				padding-left: 20% / $calc-xl
+				padding: 0 20% / $calc-xl 0 20% / $calc-xl
 		@include lg
-				padding-left: 20% / $calc-lg
+				padding: 0 20% / $calc-lg 0 20% / $calc-lg
 		
 
 .reveal-anim 
@@ -410,9 +425,9 @@ body
 		@include mdp
 				font-size: 1.7225rem / $calc-mdp
 		@include sml
-				font-size: 1.7225rem / $calc-sml
+				font-size: 2.7225rem / $calc-sml
 		@include smp
-				font-size: 1.7225rem / $calc-smp
+				font-size: 2.7225rem / $calc-smp
 		
 
 .video-js 
@@ -423,6 +438,7 @@ body
 		
 .video-js .vjs-big-play-button
 		border: none !important
+		background-color: rgba(0, 0, 0, 0) !important
 		background-color: transparent !important
 		width: 6.3125rem !important
 		height: 6.3125rem !important
@@ -447,6 +463,7 @@ body
 		
 
 .video-js .vjs-big-play-button .vjs-icon-placeholder:before
+		color: rgba(0, 0, 0, 0) !important
 		color: transparent
 		background-image: url('/images/desktop/player_big_button.png')
 		// background-position: 55% calc(50% - 0px)

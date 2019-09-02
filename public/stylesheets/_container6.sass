@@ -24,7 +24,8 @@
 				background-size: cover
 				background-repeat: no-repeat
 				background-position: center
-				padding-left: 5%
+				padding: 0 5% 0 5%
+				min-width: auto
 		@include xl
 				min-width: 120rem / $calc-xl
 				min-height: 67.5rem / $calc-xl
@@ -38,29 +39,27 @@
 				min-width: 45rem / $calc-mdp
 				min-height: 54.25rem / $calc-mdp
 		@include sml
-				min-width: 45rem / $calc-sml
 				min-height: 54.25rem / $calc-sml
 		@include smp
-				min-width: 45rem / $calc-sml
 				min-height: 54.25rem / $calc-sml
 		.position-container
-				width: 95%
+				width: 90%
 				margin-top: 13.9375rem
 				@include xl
 						margin-top: 13.9375rem / $calc-xl
 				@include lg
 						margin-top: 13.9375rem / $calc-lg
 				@include mdl
-						width: auto
+						width: 100%
 						margin-top: 5.875rem / $calc-mdl
 				@include mdp
-						width: auto
+						width: 100%
 						margin-top: 5.875rem / $calc-mdp
 				@include sml
-						width: auto
+						width: 100%
 						margin-top: 5.875rem / $calc-sml
 				@include smp
-						width: auto
+						width: 100%
 						margin-top: 5.875rem / $calc-smp
 				.container-6-mobile-text
 						@include isMobile
@@ -90,22 +89,22 @@
 				@include mdl
 						margin-top: 2.4375rem / $calc-mdl
 						font-size: 2.125rem / $calc-mdl
-						width: 45rem / $calc-mdl
+						width: 100%
 						height: 5rem / $calc-mdl
 				@include mdp
 						margin-top: 2.4375rem / $calc-mdp
 						font-size: 2.125rem / $calc-mdp
-						width: 45rem / $calc-mdp
+						width: 100%
 						height: 5rem / $calc-mdp
 				@include sml
 						margin-top: 2.4375rem / $calc-sml
 						font-size: 2.125rem / $calc-sml
-						width: 45rem / $calc-sml
+						width: 100%
 						height: 5rem / $calc-sml
 				@include smp
 						margin-top: 2.4375rem / $calc-sml
 						font-size: 2.125rem / $calc-sml
-						width: 45rem / $calc-sml
+						width: 100%
 						height: 5rem / $calc-sml
 				&:focus
 						outline: none

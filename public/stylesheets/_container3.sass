@@ -5,12 +5,6 @@
 		position: relative
 		width: 100%
 		height: 48rem
-		@include isMobile
-				display: flex
-				flex-direction: column
-				align-items: center
-		@include isMobile
-				align-items: flex-start
 		@include xl
 				height: 48rem / $calc-xl
 		@include lg
@@ -44,35 +38,35 @@
 								height: 100%
 				#evening 
 						content: url('/images/desktop/evening.jpg')
+						display: block
 						@include isMobile
 								display: none
 				
 		#car
 				position: absolute
-				background-image: url('/images/desktop/car.png')
-				-webkit-background-size: cover
-				-moz-background-size: cover
-				-o-background-size: cover
-				background-size: cover
+				display: block
+				content: url('/images/desktop/car.png')
 				right: 0px
 				bottom: 0px
-				min-width: 115.625rem
-				min-height: 34.1875rem
-				@include xl
-						min-width: 77.08rem
-						min-height: 22.79rem
-				@include lg
-						min-width: 77.08rem / $calc-lg
-						min-height: 22.79rem / $calc-lg
+				width: 100%
 				@include isMobile
 						display: none
+		#mobile-car
+				display: none
+				@include isMobile
+						position: absolute
+						display: block
+						content: url('/images/mobile/car.png')
+						width: 100%
+						bottom: 0		
 		#container-3-text-container 
 				position: absolute
 				margin-top: 11.8125rem
 				margin-left: 20%
+				width: 100%
 				@include isMobile
 						position: relative
-						margin-left: 5%
+						margin: 0 5% 0 5%
 				@include xl
 						margin-top: 11.8125rem / $calc-xl
 						margin-left: 20% / $calc-xl
@@ -80,15 +74,19 @@
 						margin-top: 11.8125rem / $calc-lg
 						margin-left: 20% / $calc-lg
 				@include mdl
-						margin-top: 6.3125rem / $calc-mdl
-						width: 50.155rem / $calc-mdl
+						margin-top: auto
+						padding-top: 6.3125rem / $calc-mdl
+						width: 90%
 				@include mdp
-						margin-top: 6.3125rem / $calc-mdp
-						width: 50.155rem / $calc-mdp
+						margin-top: auto
+						padding-top: 6.3125rem / $calc-mdp
+						width: 90%
 				@include sml
-						margin-top: 6.3125rem / $calc-sml
-						width: 50.155rem / $calc-sml
+						margin-top: auto
+						padding-top: 6.3125rem / $calc-sml
+						width: 90%
 				@include smp
-						margin-top: 6.3125rem / $calc-smp
-						width: 50.155rem / $calc-sml
+						margin-top: auto
+						padding-top: 6.3125rem / $calc-smp
+						width: 90%
 				

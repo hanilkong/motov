@@ -4,24 +4,11 @@
 #container-7 
 		position: relative
 		background: #f2f2f2
-		white-space: nowrap
 		display: flex
 		flex-direction: column
 		align-items: center
 		width: 100%
-		height: 50.375rem
-		@include xl
-				height: 50.375rem / $calc-xl
-		@include lg
-				height: 50.375rem / $calc-lg
-		@include mdl
-				height: 70.875rem / $calc-mdl
-		@include mdp
-				height: 70.875rem / $calc-mdp
-		@include sml
-				height: 70.875rem / $calc-sml
-		@include smp
-				height: 70.875rem / $calc-sml
+		height: 100%
 		.container-7-title 
 				font-family: 'noto-sansB'
 				color: #008d9b
@@ -40,10 +27,10 @@
 						font-size: 3rem / $calc-mdp
 						margin-top: 6.16125rem / $calc-mdp
 				@include sml
-						font-size: 3rem / $calc-sml
+						font-size: 4rem / $calc-sml
 						margin-top: 6.16125rem / $calc-sml
 				@include smp
-						font-size: 3rem / $calc-smp
+						font-size: 4rem / $calc-smp
 						margin-top: 6.16125rem / $calc-smp
 		.container-7-underbar 
 				margin: 2.5rem 0 2.5rem 0
@@ -75,20 +62,27 @@
 				flex-direction: row
 				justify-content: space-between
 				margin-top: 6.25rem
+				margin-bottom: 8.3125rem
 				@include isMobile
 					flex-direction: column
 				@include xl
 						margin-top: 6.25rem / $calc-xl
+						margin-bottom: 8.3125rem / $calc-xl
 				@include lg
 						margin-top: 6.25rem / $calc-lg
+						margin-bottom: 8.3125rem / $calc-lg
 				@include mdl
 						margin-top: 4.43875rem / $calc-mdl
+						margin-bottom: 5.0625rem / $calc-mdl
 				@include mdp
 						margin-top: 4.43875rem / $calc-mdp
+						margin-bottom: 5.0625rem / $calc-mdp
 				@include sml
 						margin-top: 4.43875rem / $calc-sml
+						margin-bottom: 5.0625rem / $calc-sml
 				@include smp
 						margin-top: 4.43875rem / $calc-smp
+						margin-bottom: 5.0625rem / $calc-smp
 		.container-7-location-item
 				@for $i from 2 through 3
 						&:nth-child(#{$i})
@@ -108,7 +102,7 @@
 						@include xl
 								width: 23.5rem / $calc-xl
 						@include lg
-								width: 23.5rem / $calc-xl
+								width: 23.5rem / $calc-lg
 						@include mdl
 								width: 40.25rem / $calc-mdl
 						@include mdp
@@ -134,10 +128,10 @@
 								font-size: 1.5rem / $calc-mdp
 								margin-top: 2.0625rem / $calc-mdp
 						@include sml
-								font-size: 1.5rem / $calc-sml
+								font-size: 2rem / $calc-sml
 								margin-top: 2.0625rem / $calc-sml
 						@include smp
-								font-size: 1.5rem / $calc-sml
+								font-size: 2rem / $calc-sml
 								margin-top: 2.0625rem / $calc-smp
 						@include isMobile
 								text-align: center

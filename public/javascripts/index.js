@@ -112,7 +112,7 @@
         new ScrollMagic.Scene({
             triggerElement: revealTrigger[i], 
             offset: 50,												
-            triggerHook: 0.9,
+            triggerHook: 1,
         })
         .setClassToggle(revealElements[i], "visible")
         // .addIndicators({ name: "digit " + (i + 1) })
@@ -158,6 +158,7 @@
     })
 
 })()
+
 function adPopUpSend(e) {
     console.log('TCL: adPopUpSend -> e', e)
     
