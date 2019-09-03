@@ -1754,7 +1754,7 @@ body {
     @media screen and (max-width: 767px) {
       #container-1 #container-1-text-body {
         width: 10.95238rem;
-        margin-top: 6.25rem;
+        margin-top: 30%;
         font-size: 1.90476rem; } }
     #container-1 #container-1-text-body div:nth-child(1) {
       white-space: nowrap;
