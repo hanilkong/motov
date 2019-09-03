@@ -9,17 +9,23 @@
 		background: #f2f2f2
 		width: 100%
 		height: 33.75rem
+		padding-bottom: 3.5625rem
 		@include isMobile
 				flex-direction: column
 				align-items: center
+				padding-bottom: 0
 		@include uhd
 				height: 33.75rem * $calc-uhd
+				padding-bottom: 3.5625rem * $calc-uhd
 		@include wqhd
 				height: 33.75rem * $calc-wqhd
+				padding-bottom: 3.5625rem * $calc-wqhd
 		@include xl
 				height: 33.75rem / $calc-xl
+				padding-bottom: 3.5625rem / $calc-xl
 		@include lg
 				height: 33.75rem / $calc-xl
+				padding-bottom: 3.5625rem / $calc-lg
 		@include mdl
 				height: 132.25rem / $calc-mdl
 		@include mdp
