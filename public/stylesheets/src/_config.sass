@@ -107,7 +107,13 @@ body
 				@include lg
 						margin-left: 20% / $calc-lg
 				#logo
-						content: url('/images/desktop/logo.png')
+						background-image: url('/images/desktop/logo.png')
+						-webkit-background-size: contain
+						-moz-background-size: contain
+						-o-background-size: contain
+						background-size: contain
+						background-repeat: no-repeat
+						background-position: center
 						width: 14.0625rem
 						height: 4rem
 						@include uhd
@@ -117,13 +123,19 @@ body
 								width: 14.0625rem * $calc-wqhd
 								height: 4rem * $calc-wqhd
 						@include isMobile
-								content: url('/images/mobile/green-small-icon.png')
+								background-image: url('/images/mobile/green-small-icon.png')
 								width: 7.9375rem
 								height: 3.5625rem
 						&.visible
-								content: url('/images/desktop/green-logo.png')
+								background-image: url('/images/desktop/green-logo.png')
+								-webkit-background-size: contain
+								-moz-background-size: contain
+								-o-background-size: contain
+								background-size: contain
+								background-repeat: no-repeat
+								background-position: center
 								@include isMobile
-										content: url('/images/mobile/green-small-icon.png')
+										background-image: url('/images/mobile/green-small-icon.png')
 										width: 7.9375rem
 										height: 3.5625rem
 		#navi

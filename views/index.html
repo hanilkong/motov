@@ -13,7 +13,7 @@
     <script src="/javascripts/lib/addindicators.min.js"></script>
     <script src="/javascripts/lib/animationgsap.js"></script>
     <script src="/javascripts/lib/spnav.min.js"></script>
-    <script src="/javascripts/lib/videojs_1.1.2.min.js"></script>
+    <!-- <script src="./assets/lib/videojs_1.1.2.min.js"></script> -->
     <script src="/javascripts/lib/videojs.min.js"></script>
     <script src="/javascripts/lib/bpopup.min.js"></script>
     <script src="/javascripts/lib/async.min.js"></script>
@@ -62,6 +62,8 @@
             <div id="mount-popup-send" class="popup-send" onclick="mountPopUpSend()">보내기</div>
         </div>
     </div>
+
+    <!-- 상단 네비게이션 -->
     <div id="navi-1" class="navi"></div>
     <div id="scroll-menu-container">
         <div id="scroll-menu"></div>
@@ -112,6 +114,8 @@
         </div>
     </div>
     <div id="navi-trigger" />
+
+    <!-- 첫번째 레이아웃 -->
     <div id="container-1" class="panel">
         <p id="container-1-text-1" class="desktop">당신의 메시지를 태워 보세요</p>
         <p id="container-1-text-2" class="desktop">국내 최초 모바일 미디어 플랫폼, 모토브</p>
@@ -123,6 +127,8 @@
         <p id="container-1-text-bottom" class="mobile">국내 최초 모바일 미디어 플랫폼, 모토브</p>
         <div id="navi-2" class="navi"></div>
     </div>
+
+    <!-- 두번째 레이아웃 -->
     <div id="container-2" class="container">
         <div id="player-container">
             <video id='player' class='video-js vjs-default-skin vjs-big-play-centered' controls preload='auto'
@@ -154,14 +160,17 @@
         </div>
 
     </div>
+
+    <!-- 세번째 레이아웃 -->
     <div id="container-3">
         <div id="trigger"></div>
         <div class="image-container" id="imagesequence">
-            <img id="afternoon" />
-            <img id="evening" />
+            <img id="afternoon" class="desktop" src="/images/desktop/afternoon.jpg" />
+            <img id="evening" class="desktop" src="/images/desktop/evening.jpg"/>
+            <img id="container-3-background" class="mobile" src="/images/mobile/small-car-back.jpg"/>
         </div>
-        <img id="car" class="desktop"/>
-        <img id="mobile-car" class="mobile"/>
+        <img id="car" class="desktop" src="/images/desktop/car.png"/>
+        <img id="mobile-car" class="mobile" src="/images/mobile/car.png"/>
         <div id="container-3-text-container">
             <div class="container-title white-motov">어디서든, 낮에도 밤에도!</div>
             <p class="container-text-body white-motov desktop">
@@ -176,13 +185,15 @@
             </p>
         </div>
     </div>
+
+    <!-- 네번째 레이아웃 -->
     <div id="container-4">
         <div class="spacer"></div>
         <div class="spacer"></div>
         <div class="spacer"></div>
         <div id="reveal-elements">
             <div class="box reveal-anim">
-                <img id="first-mover-ads-icon" />
+                <img id="first-mover-ads-icon" src="/images/desktop/first-mover-ads.png"/>
                 <p class="container-title box-title1 black-motov">First-Mover Adv.</p>
                 <div class="box-body-container1">
                     <p class="container-text-body gray-motov text-center">
@@ -195,7 +206,7 @@
                 </div>
             </div>
             <div class="box reveal-anim">
-                <img id="geo-targeting-ads-icon" />
+                <img id="geo-targeting-ads-icon" src="/images/desktop/geo-targeting-ads.png"/>
                 <p class="container-title box-title2 black-motov">Geo-targeting Ads</p>
                 <div class="box-body-container2">
                     <p class="container-text-body gray-motov text-center ">
@@ -207,7 +218,7 @@
                 </div>
             </div>
             <div class="box reveal-anim">
-                <img id="intelligent-ap-icon" />
+                <img id="intelligent-ap-icon" src="/images/desktop/intelligent-ap.png"/>
                 <p class="container-title box-title3 black-motov">Intelligent Ap</p>
                 <div class="box-body-container3">
                     <p class="container-text-body gray-motov text-center ">
@@ -221,6 +232,8 @@
             </div>
         </div>
     </div>
+
+    <!-- 다섯번째 레이아웃 -->
     <div id="container-5">
         <div class="spacer"></div>
         <div class="spacer"></div>
@@ -250,11 +263,13 @@
             <button id="ad-button">광 고 문 의</button>
         </div>
         <div id="device-container" class="desktop">
-            <img id="big-device" class="device reveal-anim" />
-            <img id="small-device" class="device reveal-anim" />
+            <img id="big-device" class="device reveal-anim" src="/images/desktop/big-device.png"/>
+            <img id="small-device" class="device reveal-anim" src="/images/desktop/small-device.png"/>
         </div>
-        <img id="mobile-device" class="mobile"/>
+        <img id="mobile-device" class="mobile" src="/images/mobile/small-device.png"/>
     </div>
+
+    <!-- 여섯번째 레이아웃 -->
     <div id="container-6" class="panel">
         <div id="navi-4" class="navi"></div>
         <div class="position-container">
@@ -283,6 +298,8 @@
             <button id="mount-button">설 치 문 의</button>
         </div>
     </div>
+
+    <!-- 일곱번째 레이아웃 -->
     <div id="container-7">
         <div id="navi-5" class="navi"></div>
         <div class="container-7-title">Smile Together!</div>
@@ -340,10 +357,13 @@
             </div>
         </div>
     </div>
+
+    <!-- 여덟번째 레이아웃 -->
     <div id="container-8">
-        <img id="motov-icon" />
+        <img id="motov-icon" src="/images/desktop/motov.jpg"/>
         <div id="hi-seoul">
-            <img id="seoul-icon" />
+            <img id="seoul-icon" class="desktop" src="/images/desktop/hi-seoul.jpg"/>
+            <img id="seoul-icon-mobile" class="mobile" src="/images/mobile/small-hiseoul.png"/>
             <div class="hi-seoul-info">
                 <p class="seoul-icon-first gray-motov desktop">서울시 우수기업 브랜드</p>
                 <p class="seoul-icon-second gray-motov desktop">The Excellent Conpany Brand of Seoul</p>
@@ -354,7 +374,8 @@
         </p>
     </div>
 </body>
-<!-- <script src=" /javascripts/js/serviceWorker.js"> </script> -->
+
+<!-- <script src=" ./assets/js/serviceWorker.js"> </script> -->
 <script src=" /javascripts/index.js"> </script>
 
 </html>

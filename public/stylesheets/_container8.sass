@@ -96,7 +96,7 @@
 						width: 7.1875rem
 						height: 5.125rem
 						@include isMobile
-								content: url('/images/mobile/small-hiseoul.png')
+								display: none
 						@include uhd
 								width: 7.1875rem * $calc-uhd
 								height: 5.125rem * $calc-uhd
@@ -109,6 +109,10 @@
 						@include lg
 								width: 7.1875rem / $calc-xl
 								height: 5.125rem / $calc-xl
+						
+						
+				#seoul-icon-mobile
+						content: url('/images/mobile/small-hiseoul.png')
 						@include mdl
 								width: 30.40875rem / $calc-mdl
 								height: 7.2875rem / $calc-mdl
