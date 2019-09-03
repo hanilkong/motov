@@ -5,11 +5,16 @@
 		background: #ffffff
 		position: relative
 		width: 100%
+		height: 53.75rem
 		@include isMobile
 				display: flex
 				flex-direction: column
 				justify-content: space-between
 				height: 100%
+		@include uhd
+				height: 53.75rem * $calc-uhd
+		@include wqhd
+				height: 53.75rem * $calc-wqhd
 		@include xl
 				height: 53.75rem / $calc-xl
 		@include lg
@@ -18,6 +23,10 @@
 				@for $i from 1 through 2
 						&:nth-child(#{$i})
 								margin-top: #{$i * 18}rem
+								// @include uhd
+								// 		margin-top: #{$i * 20}rem * $calc-uhd
+								// @include wqhd
+								// 		margin-top: #{$i * 20}rem * $calc-wqhd
 								@include xl
 										margin-top: #{$i * 20}rem / $calc-xl
 								@include lg
@@ -34,6 +43,12 @@
 						position: relative
 						margin-left: 5%
 						z-index: 0
+				@include uhd
+						margin-top: 12.0625rem * $calc-uhd
+						// margin-left: 20% * $calc-uhd
+				@include wqhd	
+						margin-top: 12.0625rem * $calc-wqhd
+						// margin-left: 20% * $calc-wqhd
 				@include xl
 						margin-top: 12.0625rem / $calc-xl
 						margin-left: 20% / $calc-xl
@@ -68,6 +83,16 @@
 						position: relative
 						width: 100%
 						z-index: 0
+				@include uhd
+						margin-top: 3.5625rem * $calc-uhd
+						font-size: 1.375rem * $calc-uhd
+						width: 15.0625rem * $calc-uhd
+						height: 3.3125rem * $calc-uhd
+				@include wqhd
+						margin-top: 3.5625rem * $calc-wqhd
+						font-size: 1.375rem * $calc-wqhd
+						width: 15.0625rem * $calc-wqhd
+						height: 3.3125rem * $calc-wqhd
 				@include xl
 						margin-top: 3.5625rem / $calc-xl
 						font-size: 1.375rem / $calc-xl
@@ -121,6 +146,12 @@
 						height: 52.5rem
 						right: 0
 						bottom: 0
+						@include uhd
+								width: 58rem * $calc-uhd
+								height: 52.5rem * $calc-uhd
+						@include wqhd
+								width: 58rem * $calc-wqhd
+								height: 52.5rem * $calc-wqhd
 						@include xl
 								width: 58rem / $calc-xl
 								height: 52.5rem / $calc-xl
@@ -137,6 +168,14 @@
 						bottom: 0
 						@include isMobile
 								display: none
+						@include uhd
+								width: 37.1875rem * $calc-uhd
+								height: 34.3125rem * $calc-uhd
+								right: 27.5625rem * $calc-uhd
+						@include wqhd
+								width: 37.1875rem * $calc-wqhd
+								height: 34.3125rem * $calc-wqhd
+								right: 27.5625rem * $calc-wqhd
 						@include xl
 								width: 37.1875rem / $calc-xl
 								height: 34.3125rem / $calc-xl

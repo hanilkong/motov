@@ -14,6 +14,12 @@
 				color: #008d9b
 				font-size: 3.125rem
 				margin-top: 8.75rem
+				@include uhd
+						font-size: 3.125rem * $calc-uhd
+						margin-top: 8.75rem * $calc-uhd
+				@include wqhd
+						font-size: 3.125rem * $calc-wqhd
+						margin-top: 8.75rem * $calc-wqhd
 				@include xl
 						font-size: 3.125rem / $calc-xl
 						margin-top: 8.75rem / $calc-xl
@@ -39,6 +45,12 @@
 				background-color: #101010
 				@include isMobile
 						height: 1px
+				@include uhd
+						margin: 2.5rem * $calc-uhd 0 2.5rem * $calc-uhd 0
+						width: 2.9375rem * $calc-uhd
+				@include wqhd
+						margin: 2.5rem * $calc-wqhd 0 2.5rem * $calc-wqhd 0
+						width: 2.9375rem * $calc-wqhd
 				@include xl
 						margin: 2.5rem / $calc-xl 0 2.5rem / $calc-xl 0
 						width: 2.9375rem / $calc-xl
@@ -65,6 +77,12 @@
 				margin-bottom: 8.3125rem
 				@include isMobile
 					flex-direction: column
+				@include uhd
+						margin-top: 6.25rem * $calc-uhd
+						margin-bottom: 8.3125rem * $calc-uhd
+				@include wqhd
+						margin-top: 6.25rem * $calc-wqhd
+						margin-bottom: 8.3125rem * $calc-wqhd
 				@include xl
 						margin-top: 6.25rem / $calc-xl
 						margin-bottom: 8.3125rem / $calc-xl
@@ -99,6 +117,12 @@
 						height: 1px
 						@include isMobile
 								background-color: #eeeeee
+						@include uhd
+								width: 23.5rem * $calc-uhd
+								height: 1px * $calc-uhd
+						@include wqhd
+								width: 23.5rem * $calc-wqhd
+								height: 1px * $calc-wqhd
 						@include xl
 								width: 23.5rem / $calc-xl
 						@include lg
@@ -115,6 +139,12 @@
 						font-family: 'noto-sansB'
 						font-size: 1.5rem
 						margin-top: 1.5rem
+						@include uhd
+								font-size: 1.5rem * $calc-uhd
+								margin-top: 1.5rem * $calc-uhd
+						@include wqhd
+								font-size: 1.5rem * $calc-wqhd
+								margin-top: 1.5rem * $calc-wqhd
 						@include xl
 								font-size: 1.5rem / $calc-xl
 								margin-top: 1.5rem / $calc-xl

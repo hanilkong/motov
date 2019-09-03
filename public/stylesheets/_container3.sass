@@ -5,6 +5,10 @@
 		position: relative
 		width: 100%
 		height: 48rem
+		@include uhd
+				height: 48rem * $calc-uhd
+		@include wqhd
+				height: 48rem * $calc-wqhd
 		@include xl
 				height: 48rem / $calc-xl
 		@include lg

@@ -1,5 +1,7 @@
 @import ./_profile
 
+$calc-uhd: 2
+$calc-wqhd: 1.3
 $calc-xl: 1
 $calc-lg: 1.5
 $calc-mdl: 1
@@ -60,6 +62,10 @@ body
 				transition: all 0.6s ease-out
 				width: 100%
 				height: 7.5rem
+				@include uhd
+						height: 7.5rem * $calc-uhd
+				@include wqhd
+						height: 7.5rem * $calc-wqhd
 				@include isMobile
 						-webkit-transform: none
 						-moz-transform: none
@@ -88,6 +94,10 @@ body
 		height: 7.5rem
 		@include isMobile
 				height: 5rem
+		@include uhd
+				height: 7.5rem * $calc-uhd
+		@include wqhd
+				height: 7.5rem * $calc-wqhd
 		#logo-container
 				margin-left: 20%
 				@include isMobile
@@ -100,6 +110,12 @@ body
 						content: url('/images/desktop/logo.png')
 						width: 14.0625rem
 						height: 4rem
+						@include uhd
+								width: 14.0625rem * $calc-uhd
+								height: 4rem * $calc-uhd
+						@include wqhd
+								width: 14.0625rem * $calc-wqhd
+								height: 4rem * $calc-wqhd
 						@include isMobile
 								content: url('/images/mobile/green-small-icon.png')
 								width: 7.9375rem
@@ -122,6 +138,10 @@ body
 				font-size: 1.25rem
 				// margin-top: 3.53375rem
 				margin-right: 10%
+				@include uhd
+						font-size: 1.25rem * $calc-uhd
+				@include wqhd
+						font-size: 1.25rem * $calc-wqhd
 				@include xl
 						margin-right: 10% / $calc-xl
 				@include lg
@@ -133,6 +153,10 @@ body
 				li 
 						display: inline-block
 						margin-right: 5rem
+						@include uhd
+								margin-right: 5rem * $calc-uhd
+						@include wqhd
+								margin-right: 5rem * $calc-wqhd
 						@include xl
 								margin-right: 5rem / $calc-xl
 						@include lg
@@ -162,6 +186,10 @@ body
 		display: flex
 		flex-direction: column
 		font-size: 1.5rem
+		@include uhd
+				font-size: 1.5rem * $calc-uhd
+		@include wqhd
+				font-size: 1.5rem * $calc-wqhd
 		@include xl
 				font-size: 1.5rem
 		@include lg
@@ -174,6 +202,14 @@ body
 		width: 2rem
 		height: 2px
 		background-color: #000000
+		@include uhd
+				margin-top: 0.5rem * $calc-uhd
+				width: 2rem * $calc-uhd
+				height: 2px * $calc-uhd
+		@include wqhd
+				margin-top: 0.5rem * $calc-wqhd
+				width: 2rem * $calc-wqhd
+				height: 2px * $calc-wqhd
 		@include xl
 				margin-top: 0.5rem
 				width: 2rem / $calc-xl
@@ -192,13 +228,16 @@ body
 		@include smp
 				margin-top: 1.6875rem / $calc-smp
 				width: 3rem / $calc-mdp
-		
 
 .container-title 
 		font-family: 'noto-sansR'
 		font-size: 2.25rem
 		margin: 2.875rem 0 1.25rem 0
 		width: 100%
+		@include uhd
+				font-size: 2.25rem * $calc-uhd
+		@include wqhd
+				font-size: 2.25rem * $calc-wqhd
 		@include xl
 				font-size: 2.25rem
 				margin: 2.875rem / $calc-xl 0 1.25rem / $calc-xl 0
@@ -219,8 +258,11 @@ body
 		font-family: 'noto-sansL'
 		font-size: 1.375rem
 		width: 100%
+		@include uhd
+				font-size: 1.375rem * $calc-uhd
+		@include wqhd
+				font-size: 1.375rem * $calc-wqhd
 		@include xl
-				width: 100%
 				font-size: 1.375rem
 		@include lg
 				width: 100%
@@ -242,12 +284,22 @@ body
 		.popup-text-container
 				margin: 3.375rem 0 1.875rem 0
 				width: 31.25rem
+				@include uhd
+						margin: 3.375rem * $calc-uhd 0 1.875rem * $calc-uhd 0
+						width: 31.25rem * $calc-uhd
+				@include wqhd
+						margin: 3.375rem * $calc-wqhd 0 1.875rem * $calc-wqhd 0
+						width: 31.25rem * $calc-wqhd
 				@include isPhone
 						margin: 3.375rem / $calc-dtm 0 1.875rem / $calc-dtm 0
 						width: 31.25rem / $calc-dtm
 				.popup-title
 						font-family: 'noto-sansB'
 						font-size: 2.125rem
+						@include uhd
+								font-size: 2.125rem * $calc-uhd
+						@include wqhd
+								font-size: 2.125rem * $calc-wqhd
 						@include isPhone
 								font-size: 2.125rem / $calc-dtm
 				.popup-info
@@ -255,6 +307,12 @@ body
 						color: #666666
 						font-size: 1.25rem
 						margin-top: 1.5625rem
+						@include uhd
+								font-size: 1.25rem * $calc-uhd
+								margin-top: 1.5625rem * $calc-uhd
+						@include wqhd
+								font-size: 1.25rem * $calc-wqhd
+								margin-top: 1.5625rem * $calc-wqhd
 						@include isPhone
 								font-size: 1.25rem / $calc-dtm
 								margin-top: 1.5625rem / $calc-dtm
@@ -267,6 +325,16 @@ body
 						font-size: 1.875rem
 						width: 31.25rem
 						height: 3.75rem
+						@include uhd
+								margin-bottom: .625rem * $calc-uhd
+								font-size: 1.875rem * $calc-uhd
+								width: 31.25rem * $calc-uhd
+								height: 3.75rem * $calc-uhd
+						@include wqhd
+								margin-bottom: .625rem * $calc-wqhd
+								font-size: 1.875rem * $calc-wqhd
+								width: 31.25rem * $calc-wqhd
+								height: 3.75rem * $calc-wqhd
 						@include isPhone
 								margin-bottom: .625rem / $calc-dtm
 								font-size: 1.875rem / $calc-dtm
@@ -281,6 +349,12 @@ body
 				color: #de4854
 				margin-top: 2.1rem
 				font-size: 1.5rem
+				@include uhd
+						margin-top: 2.1rem * $calc-uhd
+						font-size: 1.5rem * $calc-uhd
+				@include wqhd
+						margin-top: 2.1rem * $calc-wqhd
+						font-size: 1.5rem * $calc-wqhd
 				@include isPhone
 						margin-top: 2.1rem / $calc-dtm
 						font-size: 1.5rem / $calc-dtm
@@ -288,6 +362,10 @@ body
 				display: flex
 				flex-direction: row
 				margin-top: 3.4375rem
+				@include uhd
+						margin-top: 3.4375rem * $calc-uhd
+				@include wqhd
+						margin-top: 3.4375rem * $calc-wqhd
 				@include isPhone
 						margin-top: 3.4375rem / $calc-dtm
 				.popup-close
@@ -300,6 +378,16 @@ body
 						height: 5rem
 						line-height: 5rem
 						font-size: 1.875rem
+						@include uhd
+								width: 18.125rem * $calc-uhd
+								height: 5rem * $calc-uhd
+								line-height: 5rem * $calc-uhd
+								font-size: 1.875rem * $calc-uhd
+						@include wqhd
+								width: 18.125rem * $calc-wqhd
+								height: 5rem * $calc-wqhd
+								line-height: 5rem * $calc-wqhd
+								font-size: 1.875rem * $calc-wqhd
 						@include isPhone
 								width: 18.125rem / $calc-dtm
 								height: 5rem / $calc-dtm
@@ -317,6 +405,16 @@ body
 						height: 5rem
 						line-height: 5rem
 						font-size: 1.875rem
+						@include uhd
+								width: 18.125rem * $calc-uhd
+								height: 5rem * $calc-uhd
+								line-height: 5rem * $calc-uhd
+								font-size: 1.875rem * $calc-uhd
+						@include wqhd
+								width: 18.125rem * $calc-wqhd
+								height: 5rem * $calc-wqhd
+								line-height: 5rem * $calc-wqhd
+								font-size: 1.875rem * $calc-wqhd
 						@include isPhone
 								width: 18.125rem / $calc-dtm
 								height: 5rem / $calc-dtm
@@ -342,7 +440,11 @@ body
 		color: #fe9b00
 		font-size: 1.25rem
 		display: block
-		@include xl
+		@include uhd
+				font-size: 1.25rem * $calc-uhd
+		@include wqhd
+				font-size: 1.25rem * $calc-wqhd
+		@include xl	
 		  	font-size: 1.25rem
 		@include lg
 				font-size: 1.4rem / $calc-lg
@@ -412,10 +514,14 @@ body
 		display: flex
 		flex-direction: column
 		align-items: center
-
+s
 .box-body-text 
 		font-family: 'noto-sansL'
 		font-size: 1.25rem
+		@include uhd
+				font-size: 1.25rem * $calc-uhd
+		@include wqhd
+				font-size: 1.25rem * $calc-wqhd
 		@include xl
 				font-size: 1.25rem
 		@include lg
@@ -432,35 +538,32 @@ body
 
 .video-js 
 		outline: none
-
-.video-js button 
-		outline: none
-		
-.video-js .vjs-big-play-button
-		border: none !important
-		background-color: rgba(0, 0, 0, 0) !important
-		background-color: transparent !important
-		width: 6.3125rem !important
-		height: 6.3125rem !important
-		@include xl
-				width: 6.3125rem / $calc-xl !important
-				height: 6.3125rem / $calc-xl !important
-		@include lg
-				width: 6.3125rem / $calc-lg !important
-				height: 6.3125rem / $calc-lg !important
-		@include mdl
-				width: 7.42rem / $calc-mdl  !important
-				height: 7.42rem / $calc-mdl  !important
-		@include mdp
-				width: 7.42rem / $calc-mdp !important
-				height: 7.42rem / $calc-mdp !important
-		@include sml
-				width: 7.42rem / $calc-sml !important
-				height: 7.42rem / $calc-sml  !important
-		@include smp
-				width: 7.42rem / $calc-smp !important
-				height: 7.42rem / $calc-smp  !important
-		
+		button 
+				outline: none
+		.vjs-big-play-button
+				border: none !important
+				background-color: rgba(0, 0, 0, 0) !important
+				background-color: transparent !important
+				width: 6.3125rem !important
+				height: 6.3125rem !important
+				@include xl
+						width: 6.3125rem / $calc-xl !important
+						height: 6.3125rem / $calc-xl !important
+				@include lg
+						width: 6.3125rem / $calc-lg !important
+						height: 6.3125rem / $calc-lg !important
+				@include mdl
+						width: 7.42rem / $calc-mdl  !important
+						height: 7.42rem / $calc-mdl  !important
+				@include mdp
+						width: 7.42rem / $calc-mdp !important
+						height: 7.42rem / $calc-mdp !important
+				@include sml
+						width: 7.42rem / $calc-sml !important
+						height: 7.42rem / $calc-sml  !important
+				@include smp
+						width: 7.42rem / $calc-smp !important
+						height: 7.42rem / $calc-smp  !important
 
 .video-js .vjs-big-play-button .vjs-icon-placeholder:before
 		color: rgba(0, 0, 0, 0) !important
@@ -472,3 +575,7 @@ body
 		-moz-background-size: contain
 		-o-background-size: contain
 		background-size: contain
+
+.vjs-modal-dialog .vjs-modal-dialog-content .video-js .vjs-modal-dialog, .vjs-button > .vjs-icon-placeholder:before, .video-js .vjs-big-play-button .vjs-icon-placeholder:before
+		top: 50%
+		left: 50%

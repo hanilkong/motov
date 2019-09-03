@@ -12,6 +12,10 @@
 				flex-direction: column-reverse
 				justify-content: flex-end
 				height: auto
+		@include uhd
+				height: 30.25rem * $calc-uhd
+		@include wqhd
+				height: 30.25rem * $calc-wqhd
 		@include xl
 				height: 30.25rem / $calc-xl
 		@include lg
@@ -34,6 +38,10 @@
 				#player
 						width: 100%
 						height: 20.375rem
+						@include uhd
+								height: 20.375rem * $calc-uhd
+						@include wqhd
+								height: 20.375rem * $calc-wqhd
 						@include xl
 								height: 20.375rem / $calc-xl
 						@include lg
@@ -55,6 +63,12 @@
 						color: #999999
 						font-size: .875rem
 						margin-top: 1.125rem
+						@include uhd
+								font-size: .875rem * $calc-uhd
+								margin-top: 1.125rem * $calc-uhd
+						@include wqhd
+								font-size: .875remc * $calc-wqhd
+								margin-top: 1.125rem * $calc-wqhd
 						@include xl
 								font-size: .875rem / $calc-xl
 								margin-top: 1.125rem / $calc-xl

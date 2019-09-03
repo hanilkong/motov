@@ -14,6 +14,10 @@
 		@include isMobile
 				flex-direction: column
 				align-items: center
+		@include uhd
+				height: 11.25rem * $calc-uhd
+		@include wqhd
+				height: 11.25rem * $calc-wqhd
 		@include xl
 				height: 11.25rem / $calc-xl
 		@include lg
@@ -36,6 +40,12 @@
 				height: 4.375rem
 				@include isMobile
 						content: url('/images/mobile/small-icon.jpg')
+				@include uhd
+						width: 15.4375rem * $calc-uhd
+						height: 4.375rem * $calc-uhd
+				@include wqhd
+						width: 15.4375rem * $calc-wqhd
+						height: 4.375rem * $calc-wqhd
 				@include xl
 						width: 15.4375rem / $calc-xl
 						height: 4.375rem / $calc-xl
@@ -61,6 +71,10 @@
 				display: flex
 				flex-direction: row
 				margin-left: 8%
+				@include uhd
+						margin-left: 8% * $calc-uhd
+				@include wqhd
+						margin-left: 8% * $calc-wqhd
 				@include xl
 						margin-left: 8% / $calc-xl
 				@include lg
@@ -83,6 +97,12 @@
 						height: 5.125rem
 						@include isMobile
 								content: url('/images/mobile/small-hiseoul.png')
+						@include uhd
+								width: 7.1875rem * $calc-uhd
+								height: 5.125rem * $calc-uhd
+						@include wqhd
+								width: 7.1875rem * $calc-wqhd
+								height: 5.125rem * $calc-wqhd
 						@include xl
 								width: 7.1875rem / $calc-xl
 								height: 5.125rem / $calc-xl
@@ -107,6 +127,10 @@
 						flex-direction: column
 						justify-content: center
 						margin-left: 1.5625rem
+						@include uhd
+								margin-left: 1.5625rem * $calc-uhd
+						@include wqhd
+								margin-left: 1.5625rem * $calc-wqhd
 						@include xl
 								margin-left: 1.5625rem / $calc-xl
 						@include lg
@@ -114,6 +138,10 @@
 						.seoul-icon-first 
 								font-family: 'noto-sansB'
 								font-size: 1rem
+								@include uhd
+										font-size: 1rem * $calc-uhd
+								@include wqhd
+										font-size: 1rem * $calc-wqhd
 								@include xl
 										font-size: 1rem / $calc-xl
 								@include lg
@@ -121,6 +149,10 @@
 						.seoul-icon-second
 								font-family: 'noto-sansL'
 								font-size: .75rem
+								@include uhd
+										font-size: .75rem * $calc-uhd
+								@include wqhd
+										font-size: .75rem * $calc-wqhd
 								@include xl
 										font-size: .75rem / $calc-xl
 								@include lg
@@ -130,23 +162,33 @@
 				font-family: 'noto-sansL'
 				font-size: 1rem
 				margin-left: 4%
+				@include isMobile
+						margin-left: 0
+				@include uhd
+						font-size: 1rem * $calc-uhd
+						margin-left: 4% * $calc-uhd
+				@include wqhd
+						font-size: 1rem * $calc-wqhd
+						margin-left: 4% * $calc-wqhd
 				@include xl
 						font-size: 1rem / $calc-xl
 						margin-left: 4% / $calc-xl
 				@include lg
 						font-size: 1rem / $calc-xl
 						margin-left: 4% / $calc-lg
-				@include isMobile
-						margin-left: 0
 				@include mdl
 						font-size: 1.375rem / $calc-mdl
 						margin-top: 7.0225rem / $calc-mdl
+						// margin-bottom: 4.4375rem / $calc-mdl
 				@include mdp
 						font-size: 1.375rem / $calc-mdp
 						margin-top: 7.0225rem / $calc-mdp
+						// margin-bottom: 4.4375rem / $calc-mdp
 				@include sml
 						font-size: 2rem / $calc-sml
 						margin-top: 7.0225rem / $calc-sml
+						// margin-bottom: 4.4375rem / $calc-sml
 				@include smp
 						font-size: 2rem / $calc-smp
 						margin-top: 7.0225rem / $calc-smp
+						// margin-bottom: 4.4375rem / $calc-smp

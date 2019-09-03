@@ -14,7 +14,7 @@
 		flex-direction: column
 		overflow: hidden
 		min-width: 120rem
-		min-height: 67.5rem
+		min-height: 67.5rem * $calc-uhd
 		@include isMobile
 				background: url('/images/mobile/small_back-1.jpg')
 				-webkit-background-size: cover
@@ -26,6 +26,10 @@
 				display: flex
 				flex-direction: column
 				align-items: center
+		@include uhd
+				min-height: 67.5rem * $calc-uhd
+		@include wqhd
+				min-height: 67.5rem * $calc-wqhd
 		@include xl
 				min-width: 80rem / $calc-xl
 				min-height: 67.5rem / $calc-xl
@@ -51,6 +55,14 @@
 				margin-top: 17rem
 				font-size: 2.625rem
 				letter-spacing: 2.7rem 
+				@include uhd
+						margin-top: 17rem * $calc-uhd
+						font-size: 2.625rem * $calc-uhd
+						letter-spacing: 2.7rem * $calc-uhd
+				@include wqhd
+						margin-top: 17rem * $calc-wqhd
+						font-size: 2.625rem * $calc-wqhd
+						letter-spacing: 2.7rem * $calc-wqhd
 				@include xl
 						margin-top: 17rem / $calc-xl
 						font-size: 2.625rem / $calc-xl
@@ -65,6 +77,12 @@
 				text-align: center
 				margin-top: 4.625rem
 				font-size: 1.75rem
+				@include uhd
+						margin-top: 4.625rem * $calc-uhd
+						font-size: 1.75rem * $calc-uhd
+				@include wqhd
+						margin-top: 4.625rem * $calc-wqhd
+						font-size: 1.75rem * $calc-wqhd
 				@include xl
 						margin-top: 4.625rem / $calc-xl
 						font-size: 1.75rem / $calc-xl
@@ -75,12 +93,11 @@
 				font-family: 'nanum-squareB'
 				color: #ffffff
 				height: 19.375rem
-				margin-top: 16rem
+				margin-top: 30%
 				font-size: 4.125rem
 				width: 23.75rem
 				@include isPhone
 						width: 23rem / $calc-sml
-						margin-top: 30%
 						font-size: 4rem / $calc-sml
 				div:nth-child(1)
 						white-space: nowrap
@@ -104,10 +121,9 @@
 				text-align: center
 				color: #ffffff
 				font-size: 1.875rem
-				bottom: 5.9375rem
+				bottom: 10%
 				@include isPhone
 						font-size: 2rem / $calc-sml
-						bottom: 5.9375rem / $calc-mdp
 				
 				
 					

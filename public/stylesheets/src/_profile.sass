@@ -42,6 +42,18 @@
     @media screen and (min-width: 1921px)
         @content
 
+// Device = Desktops
+// Screen = B/w 1921px to 2560px
+@mixin wqhd
+    @media screen and (min-width: 1921px) and (max-width: 2560px)
+        @content
+
+// Device = Desktops
+// Screen = B/w 2561px to 3840px
+@mixin uhd
+    @media screen and (min-width: 2561px) and (max-width: 3840px)
+        @content
+
 // Device = Costom
 @mixin rwd($min-screen, $max-screen)
     @media screen and (min-width: $min-screen) and (max-width: $max-screen)

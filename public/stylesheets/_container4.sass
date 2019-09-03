@@ -12,6 +12,10 @@
 		@include isMobile
 				flex-direction: column
 				align-items: center
+		@include uhd
+				height: 33.75rem * $calc-uhd
+		@include wqhd
+				height: 33.75rem * $calc-wqhd
 		@include xl
 				height: 33.75rem / $calc-xl
 		@include lg
@@ -29,6 +33,10 @@
 				@for $i from 1 through 3
 						&:nth-child(#{$i})
 								margin-top: #{$i * 8}rem
+								// @include uhd
+								// 		margin-top: #{$i * 8}rem * $calc-uhd
+								// @include wqhd
+								// 		margin-top: #{$i * 8}rem * $calc-wqhd
 								@include xl
 										margin-top: #{$i * 8}rem / $calc-xl
 								@include lg
@@ -50,6 +58,10 @@
 						&:nth-child(1)
 								margin-top: 6.125rem
 								width: 33%
+								@include uhd
+										margin-top: 6.125rem * $calc-uhd
+								@include wqhd
+										margin-top: 6.125rem * $calc-wqhd
 								@include xl
 										margin-top: 6.125rem / $calc-xl
 										// width: 33%; / $calc-xl
@@ -62,6 +74,12 @@
 						&:nth-child(2)
 								margin-top: 6.625rem
 								width: 33%
+								@include uhd
+										margin-top: 6.125rem * $calc-uhd
+										margin-left: 10% * $calc-uhd
+								@include wqhd
+										margin-top: 6.125rem * $calc-wqhd
+										margin-left: 10% * $calc-wqhd
 								@include xl
 										margin-top: 6.625rem / $calc-xl
 										margin-left: 10% / $calc-xl
@@ -74,6 +92,12 @@
 						&:nth-child(3)
 								margin-top: 6.625rem
 								width: 33%
+								@include uhd
+										margin-top: 6.125rem * $calc-uhd
+										margin-left: 10% * $calc-uhd
+								@include wqhd
+										margin-top: 6.125rem * $calc-wqhd
+										margin-left: 10% * $calc-wqhd
 								@include xl
 										margin-top: 6.625rem / $calc-xl
 										margin-left: 10% / $calc-xl
@@ -89,6 +113,12 @@
 				height: 9.5625rem
 				@include isMobile
 						content: url('/images/mobile/small-icon1.png')
+				@include uhd
+						width: 10rem * $calc-uhd
+						height: 9.5625rem * $calc-uhd
+				@include wqhd
+						width: 10rem * $calc-wqhd
+						height: 9.5625rem * $calc-wqhd
 				@include xl
 						width: 10rem / $calc-xl
 						height: 9.5625rem / $calc-xl
@@ -112,6 +142,10 @@
 				font-family: 'noto-sansR'
 				margin-top: 2.0625rem
 				width: auto
+				@include uhd
+						margin-top: 2.0625rem * $calc-uhd
+				@include wqhd
+						margin-top: 2.0625rem * $calc-wqhd
 				@include xl
 						margin-top: 2.0625rem / $calc-xl
 				@include lg
@@ -130,6 +164,10 @@
 				flex-direction: column
 				align-items: center
 				margin-top: 2.0625rem
+				@include uhd
+						margin-top: 2.0625rem * $calc-uhd
+				@include wqhd
+						margin-top: 2.0625rem * $calc-wqhd
 				@include xl
 						margin-top: 2.0625rem / $calc-xl
 				@include lg
@@ -148,6 +186,12 @@
 				height: 8.5625rem
 				@include isMobile
 						content: url('/images/mobile/small-icon2.png')
+				@include uhd
+						width: 11.1875rem * $calc-uhd
+						height: 8.5625rem * $calc-uhd
+				@include wqhd
+						width: 11.1875rem * $calc-wqhd
+						height: 8.5625rem * $calc-wqhd
 				@include xl
 						width: 11.1875rem / $calc-xl
 						height: 8.5625rem / $calc-xl
@@ -171,6 +215,10 @@
 				font-family: 'noto-sansR'
 				margin-top: 2.5625rem
 				width: auto
+				@include uhd
+						margin-top: 2.5625rem * $calc-uhd
+				@include wqhd
+						margin-top: 2.5625rem * $calc-wqhd
 				@include xl
 						margin-top: 2.5625rem / $calc-xl
 				@include lg
@@ -189,6 +237,10 @@
 				flex-direction: column
 				align-items: center
 				margin-top: 2.0625rem
+				@include uhd
+						margin-top: 2.0625rem * $calc-uhd
+				@include wqhd
+						margin-top: 2.0625rem * $calc-wqhd
 				@include xl
 						margin-top: 2.0625rem / $calc-xl
 				@include lg
@@ -207,6 +259,12 @@
 				height: 8.625rem
 				@include isMobile
 						content: url('/images/mobile/small-icon3.png')
+				@include uhd
+						width: 11.75rem * $calc-uhd
+						height: 8.625rem * $calc-uhd
+				@include wqhd
+						width: 11.75rem * $calc-wqhd
+						height: 8.625rem * $calc-wqhd
 				@include xl
 						width: 11.75rem / $calc-xl
 						height: 8.625rem / $calc-xl
@@ -230,6 +288,10 @@
 				font-family: 'noto-sansR'
 				margin-top: 2.4375rem
 				width: auto
+				@include uhd
+						margin-top: 2.4375rem * $calc-uhd
+				@include wqhd
+						margin-top: 2.4375rem * $calc-wqhd
 				@include xl
 						margin-top: 2.4375rem / $calc-xl
 				@include lg
@@ -248,6 +310,10 @@
 				flex-direction: column
 				align-items: center
 				margin-top: 2.0625rem
+				@include uhd
+						margin-top: 2.0625rem * $calc-uhd
+				@include wqhd
+						margin-top: 2.0625rem * $calc-wqhd
 				@include xl
 						margin-top: 2.0625rem / $calc-xl
 				@include lg
