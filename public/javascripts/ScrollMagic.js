@@ -17,7 +17,6 @@ if ($(window).width() <= mobileSize && desktopCtl.enabled()) {
 desktopCtl.update(true);
 
 $(window).on("resize", function () {
-console.log('TCL: window', window)
     if ($(window).width() <= mobileSize && desktopCtl.enabled()) {
         desktopCtl.enabled(false);
     } else if ($(window).width() > mobileSize && !desktopCtl.enabled()) {
