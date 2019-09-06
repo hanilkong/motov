@@ -8,6 +8,12 @@
   width: 100%;
   height: 100%;
 }
+@media screen and (max-width: 767px) {
+  .vjs-modal-dialog .vjs-modal-dialog-content, .video-js .vjs-modal-dialog, .vjs-button > .vjs-icon-placeholder:before, .video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
 
 .vjs-button > .vjs-icon-placeholder:before, .video-js .vjs-big-play-button .vjs-icon-placeholder:before {
   text-align: center;

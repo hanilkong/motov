@@ -1,30 +1,17 @@
 @import src/_config
 @import src/_profile
 
-#container-1 
+#container-1
 		position: relative
-		background: url('/images/desktop/back-1.jpg')
-		-webkit-background-size: cover
-		-moz-background-size: cover
-		-o-background-size: cover
-		background-size: cover
-		background-repeat: no-repeat
-		background-position: center
 		display: flex
 		flex-direction: column
 		overflow: hidden
 		min-width: 120rem
-		min-height: 67.5rem * $calc-uhd
+		min-height: 67.5rem
 		@include isMobile
-				background: url('/images/mobile/small_back-1.jpg')
-				-webkit-background-size: cover
-				-moz-background-size: cover
-				-o-background-size: cover
-				background-size: cover
-				background-repeat: no-repeat
-				background-position: center
 				display: flex
 				flex-direction: column
+				justify-content: space-between
 				align-items: center
 		@include uhd
 				min-height: 67.5rem * $calc-uhd
@@ -54,7 +41,7 @@
 				color: #ffffff
 				margin-top: 17rem
 				font-size: 2.625rem
-				letter-spacing: 2.7rem 
+				letter-spacing: 2.7rem
 				@include uhd
 						margin-top: 17rem * $calc-uhd
 						font-size: 2.625rem * $calc-uhd
@@ -92,7 +79,7 @@
 		#container-1-text-body
 				font-family: 'nanum-squareB'
 				color: #ffffff
-				height: 19.375rem
+				// height: 19.375rem
 				margin-top: 30%
 				font-size: 4.125rem
 				width: 23.75rem
@@ -115,16 +102,14 @@
 						@include isPhone
 								letter-spacing: .2rem
 		#container-1-text-bottom
-				position: absolute
+				// position: absolute
 				font-family: 'nanum-squareR'
-				width: 100%
+				// width: 100%
 				text-align: center
 				color: #ffffff
 				font-size: 1.875rem
-				bottom: 10%
+				margin-bottom: 10%
+				margin-top: 70%
+				// border: 3px solid red
 				@include isPhone
 						font-size: 2rem / $calc-sml
-				
-				
-					
-					

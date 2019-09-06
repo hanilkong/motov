@@ -1,5 +1,4 @@
 @import ./_profile
-
 $calc-uhd: 2
 $calc-wqhd: 1.3
 $calc-xl: 1
@@ -10,34 +9,32 @@ $calc-sml: 2.1
 $calc-smp: 3.2
 $calc-dtm: 1.875
 
-@font-face 
+@font-face
 		font-family: 'noto-sansL'
 		src: url('/font/NotoSansKR-Light.woff2')
 
-@font-face 
+@font-face
 		font-family: 'noto-sansM'
 		src: url('/font/NotoSansKR-Medium.woff2')
 
-@font-face 
+@font-face
 		font-family: 'noto-sansB'
 		src: url('/font/NotoSansKR-Bold.woff2')
 
-@font-face 
+@font-face
 		font-family: 'noto-sansR'
 		src: url('/font/NotoSansKR-Regular.woff2')
 
-@font-face 
+@font-face
 		font-family: 'nanum-squareB'
 		src: url('/font/NanumSquareB.woff2')
 
-@font-face 
+@font-face
 		font-family: 'nanum-squareR'
 		src: url('/font/NanumSquareR.woff2')
-
-html 
-    overflow-x: hidden
-
-body 
+html
+overflow-x: hidden
+body
 		display: flex
 		flex-direction: column
 		overflow-x: hidden
@@ -45,7 +42,7 @@ body
 #scroll-menu-container
 		display: flex
 		flex-direction: column
-		#scroll-menu 
+		#scroll-menu
 				position: fixed
 				background: #ffffff
 				z-index: 2
@@ -82,8 +79,8 @@ body
 						-ms-transform: none
 						-o-transform: none
 						transform: none
-				
-#top-menu 
+
+#top-menu
 		position: fixed
 		display: flex
 		flex-direction: row
@@ -108,10 +105,6 @@ body
 						margin-left: 20% / $calc-lg
 				#logo
 						background-image: url('/images/desktop/logo.png')
-						-webkit-background-size: contain
-						-moz-background-size: contain
-						-o-background-size: contain
-						background-size: contain
 						background-repeat: no-repeat
 						background-position: center
 						width: 14.0625rem
@@ -128,10 +121,6 @@ body
 								height: 3.5625rem
 						&.visible
 								background-image: url('/images/desktop/green-logo.png')
-								-webkit-background-size: contain
-								-moz-background-size: contain
-								-o-background-size: contain
-								background-size: contain
 								background-repeat: no-repeat
 								background-position: center
 								@include isMobile
@@ -162,7 +151,7 @@ body
 						margin-right: 10% / $calc-mdl
 				@include isMobile
 						display: none
-				li 
+				li
 						display: inline-block
 						margin-right: 5rem
 						@include uhd
@@ -181,19 +170,25 @@ body
 								margin-right: 5rem
 						@include smp
 								margin-right: 5rem / $calc-smp
-						a 
+						a
 								text-decoration: none
 								color: #ffffff
 								&.visible
 										text-decoration: none
 										color: #000000
+.conainer-background
+		position: absolute
+		object-fit: cover
+		width: 100%
+		height: 100%
+		z-index: -1
 .navi-active
 		color: #3d8e9b !important
 
-.navi 
+.navi
 		position: absolute
 
-.container-navi-title 
+.container-navi-title
 		font-family: 'noto-sansB'
 		display: flex
 		flex-direction: column
@@ -209,7 +204,7 @@ body
 		@include isMobile
 				font-size: 2rem
 
-.container-navi-title-underbar 
+.container-navi-title-underbar
 		margin-top: 0.5rem
 		width: 2rem
 		height: 2px
@@ -241,7 +236,7 @@ body
 				margin-top: 1.6875rem / $calc-smp
 				width: 3rem / $calc-mdp
 
-.container-title 
+.container-title
 		font-family: 'noto-sansR'
 		font-size: 2.25rem
 		margin: 2.875rem 0 1.25rem 0
@@ -277,7 +272,6 @@ body
 		@include xl
 				font-size: 1.375rem
 		@include lg
-				width: 100%
 				font-size: 1.5rem / $calc-lg
 		@include isMobile
 				font-size: 1.625rem
@@ -433,22 +427,22 @@ body
 								line-height: 5rem / $calc-dtm
 								font-size: 1.875rem / $calc-dtm
 
-.white-motov 
+.white-motov
 		color: #ffffff
 
-.black-motov 
+.black-motov
 		color: #121212
 
-.gray-motov 
+.gray-motov
 		color: #666666
 
-.opacity-motov 
+.opacity-motov
 		color: rgba(255, 255, 255, 0.749)
 
 .back-white
 		background-color: #ffffff
 
-.point-motov 
+.point-motov
 		color: #fe9b00
 		font-size: 1.25rem
 		display: block
@@ -463,7 +457,7 @@ body
 		@include isMobile
 			display: none
 
-.text-center 
+.text-center
 		text-align: center
 
 .desktop
@@ -480,13 +474,13 @@ body
 		padding: 0 20% 0 20%
 		@include isMobile
 				padding: 0 5% 0 5%
+				width: 90%
 		@include xl
 				padding: 0 20% / $calc-xl 0 20% / $calc-xl
 		@include lg
 				padding: 0 20% / $calc-lg 0 20% / $calc-lg
-		
 
-.reveal-anim 
+.reveal-anim
 		opacity: 0
 		-webkit-transform: translateX(-2.5px)
 		-moz-transform: translateX(-2.5px)
@@ -511,7 +505,7 @@ body
 				-o-transition: none
 				transition: none
 
-.reveal-anim.visible 
+.reveal-anim.visible
 		opacity: 1
 		-webkit-transform: none
 		-moz-transform: none
@@ -519,15 +513,15 @@ body
 		-o-transform: none
 		transform: none
 
-.spacer 
+.spacer
 		position: absolute
 
-.box 
+.box
 		display: flex
 		flex-direction: column
 		align-items: center
 s
-.box-body-text 
+.box-body-text
 		font-family: 'noto-sansL'
 		font-size: 1.25rem
 		@include uhd
@@ -546,11 +540,10 @@ s
 				font-size: 2.7225rem / $calc-sml
 		@include smp
 				font-size: 2.7225rem / $calc-smp
-		
 
-.video-js 
+.video-js
 		outline: none
-		button 
+		button
 				outline: none
 		.vjs-big-play-button
 				border: none !important
